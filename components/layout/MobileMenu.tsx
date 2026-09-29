@@ -78,8 +78,8 @@ export function MobileMenu({
           <Image
             src="/logo.png"
             alt="Boost360"
-            width={150}
-            height={38}
+            width={1524}
+            height={358}
             className="h-8 w-auto"
           />
           <button

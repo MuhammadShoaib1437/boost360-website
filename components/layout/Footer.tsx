@@ -53,7 +53,7 @@ export function Footer() {
                 alt="Boost360"
                 width={1524}
                 height={358}
-                className="h-12 w-auto"
+                className="h-10 w-auto"
               />
             </Link>
             <p className="mt-3 text-sm font-semibold tracking-wide text-ice">
