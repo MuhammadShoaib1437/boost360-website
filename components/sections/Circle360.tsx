@@ -1,19 +1,24 @@
 "use client";
 
+import Link from "next/link";
 import { Icons } from "../ui/icons";
 
-const NODES = [
-  "Research",
-  "Setup",
-  "Listings",
-  "SEO",
-  "Advertising",
-  "Operations",
-  "Optimization",
-  "Growth",
+const NODES: { label: string; href: string }[] = [
+  { label: "Research", href: "/services/product-research" },
+  { label: "Setup", href: "/services/store-setup" },
+  { label: "Listings", href: "/services/listing-optimization" },
+  { label: "SEO", href: "/services/ecommerce-seo" },
+  { label: "Advertising", href: "/services/ppc-advertising" },
+  { label: "Operations", href: "/services/account-health" },
+  { label: "Optimization", href: "/services/marketplace-management" },
+  { label: "Growth", href: "/services/multi-channel-management" },
 ];
 
-/** Animated 360° concept graphic. Slow rotation, gentle node pulse. */
+/**
+ * Animated 360° concept graphic.
+ * Nodes orbit slowly around the center (counter-rotated so labels stay upright)
+ * and each node links to its service page.
+ */
 export function Circle360() {
   return (
     <div>
@@ -33,26 +38,28 @@ export function Circle360() {
           className="absolute inset-0 rounded-full bg-[radial-gradient(circle_at_center,rgba(0,140,255,0.16),transparent_62%)]"
         />
 
-        {/* nodes */}
-        {NODES.map((node, i) => {
-          const rad = ((i / NODES.length) * 360 - 90) * (Math.PI / 180);
-          const left = 50 + 38 * Math.cos(rad);
-          const top = 50 + 38 * Math.sin(rad);
-          return (
-            <div
-              key={node}
-              className="absolute -translate-x-1/2 -translate-y-1/2"
-              style={{ left: `${left}%`, top: `${top}%` }}
-            >
+        {/* nodes — orbit around the center, labels stay upright, click opens the service */}
+        <div className="absolute inset-0 animate-spin-slower">
+          {NODES.map((node, i) => {
+            const rad = ((i / NODES.length) * 360 - 90) * (Math.PI / 180);
+            const left = 50 + 38 * Math.cos(rad);
+            const top = 50 + 38 * Math.sin(rad);
+            return (
               <div
-                className="animate-pulse-soft whitespace-nowrap rounded-full border border-ice/30 bg-midnight/90 px-5 py-2.5 text-sm font-semibold text-white shadow-[0_0_28px_-6px_rgba(0,200,248,0.55)] backdrop-blur-md"
-                style={{ animationDelay: `${i * 0.4}s` }}
+                key={node.label}
+                className="absolute -translate-x-1/2 -translate-y-1/2"
+                style={{ left: `${left}%`, top: `${top}%` }}
               >
-                {node}
+                <Link
+                  href={node.href}
+                  className="block animate-spin-slower-reverse whitespace-nowrap rounded-full border border-ice/30 bg-midnight/90 px-5 py-2.5 text-sm font-semibold text-white shadow-[0_0_28px_-6px_rgba(0,200,248,0.55)] backdrop-blur-md transition-colors hover:border-ice/70 hover:text-ice"
+                >
+                  {node.label}
+                </Link>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
 
         {/* center */}
         <div className="absolute left-1/2 top-1/2 flex h-44 w-44 -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-full border border-ice/30 bg-navy shadow-[0_0_80px_-10px_rgba(0,200,248,0.6)] lg:h-52 lg:w-52">
@@ -75,14 +82,18 @@ export function Circle360() {
         </div>
         <ul className="mt-8 grid grid-cols-2 gap-3">
           {NODES.map((node, i) => (
-            <li
-              key={node}
-              className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4"
-            >
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-ice/10 text-[13px] font-bold text-ice">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <span className="text-[15px] font-semibold text-white">{node}</span>
+            <li key={node.label}>
+              <Link
+                href={node.href}
+                className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition-colors hover:border-ice/40"
+              >
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-ice/10 text-[13px] font-bold text-ice">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="text-[15px] font-semibold text-white">
+                  {node.label}
+                </span>
+              </Link>
             </li>
           ))}
         </ul>

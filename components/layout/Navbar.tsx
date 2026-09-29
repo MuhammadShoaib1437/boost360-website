@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -85,16 +85,8 @@ function Dropdown({
 }
 
 export function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   const [lastPathname, setLastPathname] = useState(pathname);
 
@@ -118,14 +110,7 @@ export function Navbar() {
 
   return (
     <>
-      <header
-        className={cn(
-          "fixed inset-x-0 top-0 z-50 transition-all duration-300",
-          scrolled
-            ? "border-b border-white/10 bg-abyss/85 py-2 shadow-lg backdrop-blur-xl"
-            : "border-b border-transparent bg-transparent py-4",
-        )}
-      >
+      <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-abyss/85 py-2 shadow-lg backdrop-blur-xl">
         <nav
           aria-label="Main navigation"
           className="mx-auto flex w-full max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-10"
@@ -134,9 +119,9 @@ export function Navbar() {
             <Image
               src="/logo.png"
               alt="Boost360 — Complete E-Commerce Growth"
-              width={190}
-              height={48}
-              className="h-9 w-auto sm:h-10"
+              width={1524}
+              height={358}
+              className="h-12 w-auto sm:h-14"
               priority
             />
           </Link>

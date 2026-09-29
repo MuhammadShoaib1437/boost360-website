@@ -51,9 +51,9 @@ export function Footer() {
               <Image
                 src="/logo.png"
                 alt="Boost360"
-                width={190}
-                height={48}
-                className="h-10 w-auto"
+                width={1524}
+                height={358}
+                className="h-12 w-auto"
               />
             </Link>
             <p className="mt-3 text-sm font-semibold tracking-wide text-ice">
