@@ -36,7 +36,7 @@ function Dropdown({
           aria-expanded={open}
           className={cn(
             "flex items-center gap-1 px-3 py-2 text-[15px] font-medium transition-colors",
-            active ? "text-ice" : "text-slate-200 hover:text-white",
+            active ? "text-brand" : "text-slate-600 hover:text-ink",
           )}
         >
           {label}
@@ -110,22 +110,20 @@ export function Navbar() {
 
   return (
     <>
-      <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-abyss/85 py-2 shadow-lg backdrop-blur-xl">
+      <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-200/70 bg-white/90 py-2 shadow-lg backdrop-blur-xl">
         <nav
           aria-label="Main navigation"
           className="mx-auto flex w-full max-w-7xl items-center justify-between pl-2 pr-5 sm:pl-3 sm:pr-8 lg:pl-4 lg:pr-10"
         >
           <Link href="/" aria-label="Boost360 home" className="shrink-0">
-            <span className="inline-flex items-center rounded-xl bg-white px-3 py-2 shadow-[0_4px_20px_-4px_rgba(0,180,255,0.5)]">
-              <Image
-                src="/logo.png"
-                alt="Boost360 — Complete E-Commerce Growth"
-                width={1524}
-                height={358}
-                className="h-10 w-auto sm:h-12"
-                priority
-              />
-            </span>
+            <Image
+              src="/logo.png"
+              alt="Boost360 — Complete E-Commerce Growth"
+              width={1524}
+              height={358}
+              className="h-10 w-auto sm:h-12"
+              priority
+            />
           </Link>
 
           <div className="hidden items-center gap-1 lg:flex">
@@ -133,7 +131,7 @@ export function Navbar() {
               href="/"
               className={cn(
                 "px-3 py-2 text-[15px] font-medium transition-colors",
-                pathname === "/" ? "text-ice" : "text-slate-200 hover:text-white",
+                pathname === "/" ? "text-brand" : "text-slate-600 hover:text-ink",
               )}
             >
               Home
@@ -161,8 +159,8 @@ export function Navbar() {
                 className={cn(
                   "px-3 py-2 text-[15px] font-medium transition-colors",
                   pathname === l.href || pathname.startsWith(l.href + "/")
-                    ? "text-ice"
-                    : "text-slate-200 hover:text-white",
+                    ? "text-brand"
+                    : "text-slate-600 hover:text-ink",
                 )}
               >
                 {l.label}
@@ -172,7 +170,7 @@ export function Navbar() {
 
           <div className="hidden items-center gap-3 lg:flex">
             <Button
-              variant="secondary"
+              variant="whatsapp"
               size="sm"
               href={waLink(WA_DEFAULT_MESSAGE)}
               target="_blank"
@@ -191,7 +189,7 @@ export function Navbar() {
             onClick={() => setMobileOpen(true)}
             aria-label="Open menu"
             aria-expanded={mobileOpen}
-            className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/15 bg-white/5 text-white lg:hidden"
+            className="flex h-11 w-11 items-center justify-center rounded-xl border border-slate-300 bg-white text-slate-800 lg:hidden"
           >
             <Icons.menu className="h-5 w-5" />
           </button>
