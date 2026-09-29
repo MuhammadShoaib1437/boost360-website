@@ -116,14 +116,16 @@ export function Navbar() {
           className="mx-auto flex w-full max-w-7xl items-center justify-between pl-2 pr-5 sm:pl-3 sm:pr-8 lg:pl-4 lg:pr-10"
         >
           <Link href="/" aria-label="Boost360 home" className="shrink-0">
-            <Image
-              src="/logo.png"
-              alt="Boost360 — Complete E-Commerce Growth"
-              width={1524}
-              height={358}
-              className="h-10 w-auto sm:h-12"
-              priority
-            />
+            <span className="inline-flex items-center rounded-xl bg-white px-3 py-2 shadow-[0_4px_20px_-4px_rgba(0,180,255,0.5)]">
+              <Image
+                src="/logo.png"
+                alt="Boost360 — Complete E-Commerce Growth"
+                width={1524}
+                height={358}
+                className="h-10 w-auto sm:h-12"
+                priority
+              />
+            </span>
           </Link>
 
           <div className="hidden items-center gap-1 lg:flex">

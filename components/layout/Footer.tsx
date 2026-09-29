@@ -48,13 +48,15 @@ export function Footer() {
         <div className="grid gap-12 lg:grid-cols-[1.3fr_2fr]">
           <div>
             <Link href="/" aria-label="Boost360 home">
-              <Image
-                src="/logo.png"
-                alt="Boost360"
-                width={1524}
-                height={358}
-                className="h-10 w-auto"
-              />
+              <span className="inline-flex items-center rounded-xl bg-white px-3 py-2">
+                <Image
+                  src="/logo.png"
+                  alt="Boost360"
+                  width={1524}
+                  height={358}
+                  className="h-10 w-auto"
+                />
+              </span>
             </Link>
             <p className="mt-3 text-sm font-semibold tracking-wide text-ice">
               {SITE_TAGLINE}
