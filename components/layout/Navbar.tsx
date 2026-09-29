@@ -113,7 +113,7 @@ export function Navbar() {
       <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-abyss/85 py-2 shadow-lg backdrop-blur-xl">
         <nav
           aria-label="Main navigation"
-          className="mx-auto flex w-full max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-10"
+          className="mx-auto flex w-full max-w-7xl items-center justify-between pl-2 pr-5 sm:pl-3 sm:pr-8 lg:pl-4 lg:pr-10"
         >
           <Link href="/" aria-label="Boost360 home" className="shrink-0">
             <Image
