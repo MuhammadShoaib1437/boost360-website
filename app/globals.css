@@ -141,16 +141,17 @@ body {
   animation-play-state: paused;
 }
 
-/* Revenue trend line: hidden until the chart first scrolls into view, then draws upward. */
+/* Revenue trend line: hidden until the chart is in view, then slowly draws upward.
+   Redraws every time the chart re-enters the viewport. */
 .draw-line {
   stroke-dashoffset: 640;
 }
 .draw-fill {
   opacity: 0;
-  transition: opacity 0.9s ease 1.5s;
+  transition: opacity 0.9s ease 2.6s;
 }
 .draw-on-view.is-visible .draw-line {
-  animation: draw 2.4s ease-out 0.2s forwards;
+  animation: draw 3.5s ease-out 0.4s forwards;
 }
 .draw-on-view.is-visible .draw-fill {
   opacity: 1;

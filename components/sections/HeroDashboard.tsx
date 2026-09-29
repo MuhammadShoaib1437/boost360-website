@@ -8,29 +8,27 @@ import { Icons } from "../ui/icons";
  * All figures are SAMPLE UI demonstration data — not Boost360 client results.
  */
 
-/** Adds `is-visible` the first time the element scrolls into view. */
-function useInViewOnce<T extends HTMLElement>(threshold = 0.35) {
+/** Adds `is-visible` whenever the element is in view (removed when scrolled away,
+ * so the revenue line redraws every time the chart re-enters the viewport). */
+function useInView<T extends HTMLElement>(threshold = 0.2) {
   const ref = useRef<T | null>(null);
   const [inView, setInView] = useState(false);
   useEffect(() => {
     const el = ref.current;
-    if (!el || inView) return;
+    if (!el) return;
     if (typeof IntersectionObserver === "undefined") {
       setInView(true);
       return;
     }
     const obs = new IntersectionObserver(
       (entries) => {
-        if (entries.some((e) => e.isIntersecting)) {
-          setInView(true);
-          obs.disconnect();
-        }
+        entries.forEach((e) => setInView(e.isIntersecting));
       },
       { threshold }
     );
     obs.observe(el);
     return () => obs.disconnect();
-  }, [inView, threshold]);
+  }, [threshold]);
   return { ref, inView };
 }
 const CHIPS = ["Amazon", "Walmart", "eBay", "Etsy", "Shopify", "TikTok Shop"];
@@ -80,7 +78,7 @@ function KpiCard({
 }
 
 export function HeroDashboard() {
-  const chart = useInViewOnce<HTMLDivElement>(0.35);
+  const chart = useInView<HTMLDivElement>(0.2);
   return (
     <div className="relative" aria-hidden="true">
       {/* glow */}
@@ -125,7 +123,7 @@ export function HeroDashboard() {
           ))}
         </div>
 
-        {/* revenue trend chart — line draws upward when first scrolled into view */}
+        {/* revenue trend chart — line redraws upward every time it enters the viewport */}
         <div
           ref={chart.ref}
           className={`mt-4 rounded-2xl border border-white/10 bg-white/[0.03] p-4 draw-on-view${
