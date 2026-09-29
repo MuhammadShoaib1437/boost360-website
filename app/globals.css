@@ -141,6 +141,21 @@ body {
   animation-play-state: paused;
 }
 
+/* Revenue trend line: hidden until the chart first scrolls into view, then draws upward. */
+.draw-line {
+  stroke-dashoffset: 640;
+}
+.draw-fill {
+  opacity: 0;
+  transition: opacity 0.9s ease 1.5s;
+}
+.draw-on-view.is-visible .draw-line {
+  animation: draw 2.4s ease-out 0.2s forwards;
+}
+.draw-on-view.is-visible .draw-fill {
+  opacity: 1;
+}
+
 /* Thin styled scrollbar for horizontal strips */
 .nice-scroll::-webkit-scrollbar {
   height: 6px;

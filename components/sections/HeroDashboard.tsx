@@ -1,11 +1,38 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
 import { Icons } from "../ui/icons";
 
 /**
  * Animated analytics dashboard visual for the hero.
  * All figures are SAMPLE UI demonstration data — not Boost360 client results.
  */
+
+/** Adds `is-visible` the first time the element scrolls into view. */
+function useInViewOnce<T extends HTMLElement>(threshold = 0.35) {
+  const ref = useRef<T | null>(null);
+  const [inView, setInView] = useState(false);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || inView) return;
+    if (typeof IntersectionObserver === "undefined") {
+      setInView(true);
+      return;
+    }
+    const obs = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          setInView(true);
+          obs.disconnect();
+        }
+      },
+      { threshold }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, [inView, threshold]);
+  return { ref, inView };
+}
 const CHIPS = ["Amazon", "Walmart", "eBay", "Etsy", "Shopify", "TikTok Shop"];
 
 const KPIS = [
@@ -53,6 +80,7 @@ function KpiCard({
 }
 
 export function HeroDashboard() {
+  const chart = useInViewOnce<HTMLDivElement>(0.35);
   return (
     <div className="relative" aria-hidden="true">
       {/* glow */}
@@ -97,8 +125,13 @@ export function HeroDashboard() {
           ))}
         </div>
 
-        {/* revenue trend chart */}
-        <div className="mt-4 rounded-2xl border border-white/10 bg-white/[0.03] p-4">
+        {/* revenue trend chart — line draws upward when first scrolled into view */}
+        <div
+          ref={chart.ref}
+          className={`mt-4 rounded-2xl border border-white/10 bg-white/[0.03] p-4 draw-on-view${
+            chart.inView ? " is-visible" : ""
+          }`}
+        >
           <div className="flex items-center justify-between">
             <p className="text-[12px] font-semibold uppercase tracking-[0.14em] text-slate-400">
               Revenue Trend
@@ -123,6 +156,7 @@ export function HeroDashboard() {
             <path
               d="M0,150 C40,145 60,120 90,118 C120,116 140,130 170,124 C200,118 210,90 245,88 C280,86 295,105 325,98 C355,91 370,60 405,58 C440,56 455,75 490,62 C520,52 540,40 560,34 L560,180 L0,180 Z"
               fill="url(#revFill)"
+              className="draw-fill"
             />
             <path
               d="M0,150 C40,145 60,120 90,118 C120,116 140,130 170,124 C200,118 210,90 245,88 C280,86 295,105 325,98 C355,91 370,60 405,58 C440,56 455,75 490,62 C520,52 540,40 560,34"
@@ -131,7 +165,7 @@ export function HeroDashboard() {
               strokeWidth="3"
               strokeLinecap="round"
               strokeDasharray="640"
-              className="animate-draw"
+              className="draw-line"
             />
             <circle cx="560" cy="34" r="5" fill="#19e58c">
               <animate attributeName="r" values="5;7;5" dur="2.4s" repeatCount="indefinite" />
