@@ -267,7 +267,7 @@ export default async function ServicePage({
             {WHY_POINTS.map((point, i) => (
               <Reveal key={point.title} delay={i * 80}>
                 <div className="h-full rounded-2xl border border-white/10 bg-white/[0.04] p-6">
-                  <p className="text-[13px] font-bold uppercase tracking-[0.18em] text-ice">
+                  <p className="text-[15px] font-extrabold uppercase tracking-[0.18em] text-ice">
                     {String(i + 1).padStart(2, "0")}
                   </p>
                   <h3 className="mt-3 text-lg font-bold text-white">

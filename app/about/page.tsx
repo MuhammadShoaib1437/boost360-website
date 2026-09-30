@@ -169,7 +169,7 @@ export default function AboutPage() {
         <Container>
           <Reveal>
             <div className="mx-auto max-w-3xl text-center">
-              <p className="text-[13px] font-bold uppercase tracking-[0.22em] text-brand">
+              <p className="text-[15px] font-extrabold uppercase tracking-[0.22em] text-brand">
                 Our Mission
               </p>
               <p className="mt-6 text-2xl font-extrabold leading-snug tracking-tight text-ink sm:text-3xl lg:text-4xl">
@@ -334,7 +334,7 @@ export default function AboutPage() {
                   <div className="absolute -right-16 -top-16 h-48 w-48 rounded-full bg-electric/20 blur-3xl" />
                 </div>
                 <div className="relative">
-                  <span className="text-gradient text-sm font-extrabold uppercase tracking-[0.2em]">
+                  <span className="text-gradient text-[15px] font-extrabold uppercase tracking-[0.2em]">
                     0{i + 1}
                   </span>
                   <h3 className="mt-3 text-xl font-bold tracking-tight text-white">

@@ -74,7 +74,7 @@ export function FreeAuditCTA() {
       <Container className="relative">
         <div className="mx-auto max-w-3xl text-center">
           <Reveal>
-            <p className="text-[13px] font-bold uppercase tracking-[0.2em] text-ice">
+            <p className="text-[15px] font-extrabold uppercase tracking-[0.2em] text-ice">
               Free Offer
             </p>
             <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">

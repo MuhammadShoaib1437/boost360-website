@@ -101,7 +101,7 @@ export default function CaseStudiesPage() {
                 </div>
                 <div className="p-6 sm:p-8">
                   <div className="rounded-2xl bg-mist p-5 sm:p-6">
-                    <p className="text-[12.5px] font-bold uppercase tracking-[0.16em] text-brand">
+                    <p className="text-[15px] font-extrabold uppercase tracking-[0.16em] text-brand">
                       The situation
                     </p>
                     <p className="mt-2.5 text-[15px] leading-relaxed text-ink">

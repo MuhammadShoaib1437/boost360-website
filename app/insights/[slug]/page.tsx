@@ -98,7 +98,7 @@ export default async function InsightPostPage({
               aria-label="Table of contents"
               className="mt-10 rounded-2xl border border-[rgba(15,70,130,0.12)] bg-mist p-6 sm:p-7"
             >
-              <h2 className="text-sm font-extrabold uppercase tracking-[0.18em] text-brand">
+              <h2 className="text-[15px] font-extrabold uppercase tracking-[0.18em] text-brand">
                 Table of contents
               </h2>
               <ol className="mt-4 space-y-2.5">
@@ -162,7 +162,7 @@ export default async function InsightPostPage({
                 B3
               </span>
               <div>
-                <p className="text-[12.5px] font-bold uppercase tracking-[0.16em] text-brand">
+                <p className="text-[15px] font-extrabold uppercase tracking-[0.16em] text-brand">
                   Written by
                 </p>
                 <p className="mt-1.5 text-lg font-bold tracking-tight text-ink">
