@@ -121,7 +121,7 @@ export function Navbar() {
               alt="Boost360Pro — Complete E-Commerce Growth"
               width={2107}
               height={643}
-              className="h-7 w-auto sm:h-9"
+              className="h-10 w-auto sm:h-12"
               priority
             />
           </Link>

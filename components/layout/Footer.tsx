@@ -55,7 +55,7 @@ export function Footer() {
                   alt="Boost360Pro"
                   width={2107}
                   height={643}
-                  className="h-7 w-auto"
+                  className="h-9 w-auto"
                 />
               </span>
             </Link>
