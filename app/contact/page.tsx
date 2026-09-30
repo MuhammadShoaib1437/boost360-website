@@ -10,6 +10,7 @@ import {
   WA_DEFAULT_MESSAGE,
   waLink,
   mailtoLink,
+  bookCallLink,
 } from "@/lib/site";
 
 export const metadata = {
@@ -45,14 +46,14 @@ export default function ContactPage() {
                 to all of them.
               </p>
             </div>
-          </Reveal>
+            </Reveal>
         </Container>
       </section>
 
       {/* Contact cards */}
       <section className="bg-white pt-14 sm:pt-20">
         <Container>
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             <Reveal>
               <div className="flex h-full flex-col rounded-3xl border border-[rgba(15,70,130,0.12)] bg-white p-8 shadow-[0_20px_60px_-30px_rgba(9,105,246,0.3)] transition-all duration-300 hover:-translate-y-1 hover:border-electric/40">
                 <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#22c15e]/10 text-[#22c15e]">
@@ -107,6 +108,36 @@ export default function ContactPage() {
                   >
                     <Icons.mail className="h-5 w-5" />
                     Send an Email
+                  </Button>
+                </div>
+              </div>
+            </Reveal>
+            <Reveal delay={240}>
+              <div className="flex h-full flex-col rounded-3xl border border-[rgba(15,70,130,0.12)] bg-white p-8 shadow-[0_20px_60px_-30px_rgba(9,105,246,0.3)] transition-all duration-300 hover:-translate-y-1 hover:border-electric/40">
+                <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-brand/10 to-ice/15 text-brand">
+                  <Icons.spark className="h-7 w-7" />
+                </span>
+                <h2 className="mt-5 text-2xl font-extrabold tracking-tight text-ink">
+                  Book a Free Call
+                </h2>
+                <p className="mt-2 text-lg font-semibold text-brand">
+                  30 minutes, no pitch
+                </p>
+                <p className="mt-3 flex-1 text-[15px] leading-relaxed text-muted">
+                  Pick a time that suits you and we&apos;ll walk through your
+                  store together — you&apos;ll leave with clear next steps
+                  whether we work together or not.
+                </p>
+                <div className="mt-7">
+                  <Button
+                    size="lg"
+                    href={bookCallLink()}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full sm:w-auto"
+                    withArrow
+                  >
+                    Book My Free Call
                   </Button>
                 </div>
               </div>

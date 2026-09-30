@@ -50,7 +50,7 @@ function Dropdown({
       </div>
       <div
         className={cn(
-          "absolute left-1/2 top-full w-[560px] -translate-x-1/2 pt-3 transition-all duration-300",
+          "absolute left-1/2 top-full w-[480px] -translate-x-1/2 pt-3 transition-all duration-150",
           open
             ? "visible translate-y-0 opacity-100"
             : "invisible -translate-y-2 opacity-0",

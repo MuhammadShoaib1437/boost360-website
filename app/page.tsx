@@ -15,6 +15,12 @@ import { Circle360 } from "@/components/sections/Circle360";
 import { BeforeAfter } from "@/components/sections/BeforeAfter";
 import { ProcessTimeline } from "@/components/sections/ProcessTimeline";
 import { Marquee } from "@/components/sections/Marquee";
+import {
+  Guarantees,
+  FreeAuditCTA,
+  ComparisonTable,
+  HomeFAQ,
+} from "@/components/sections/HomeExtras";
 import { Icons } from "@/components/ui/icons";
 import { SERVICES } from "@/lib/data-services";
 import { MARKETPLACES } from "@/lib/data-marketplaces";
@@ -40,33 +46,33 @@ const MARKETPLACE_POINTS: Record<string, string[]> = {
 const WHY = [
   {
     icon: "globe" as const,
-    title: "Multi-Marketplace Expertise",
-    desc: "Support multiple marketplaces through one coordinated workflow.",
+    title: "Every Marketplace, One Team",
+    desc: "Amazon, Walmart, eBay, Etsy, Shopify, TikTok Shop — all run by a single team that knows each platform's rules.",
   },
   {
     icon: "chart" as const,
-    title: "Data-Informed Decisions",
-    desc: "Use available marketplace and performance data to guide optimization.",
+    title: "Honest About the Numbers",
+    desc: "We show you what's actually working, what isn't, and what we'll do next. Real figures — no vanity metrics.",
   },
   {
     icon: "layers" as const,
-    title: "End-to-End Support",
-    desc: "Support operations from initial setup through ongoing optimization.",
+    title: "The Full Circle, Not Piecemeal Tasks",
+    desc: "Research, setup, listings, SEO, ads, account health — eight stages working as one system, so nothing slips between providers.",
   },
   {
     icon: "tag" as const,
-    title: "Seller-Focused Strategy",
-    desc: "Recommendations consider your products, margins and goals.",
+    title: "Strategy Built Around Your Margins",
+    desc: "Every recommendation weighed against your products, pricing and profit — never generic best practices.",
   },
   {
     icon: "check" as const,
-    title: "Clear Communication",
-    desc: "Projects stay organized with straightforward communication.",
+    title: "You Always Know What's Happening",
+    desc: "Weekly plain-language updates on what was done and why. Ask anything on WhatsApp and get a straight answer.",
   },
   {
     icon: "rocket" as const,
-    title: "Built for Growth",
-    desc: "Repeatable systems that support expansion when you're ready.",
+    title: "Grows When You Grow",
+    desc: "Start with a listing pack or a single store, expand to full multi-channel management when you're ready. No rebuilding from scratch.",
   },
 ];
 
@@ -123,13 +129,16 @@ export default function Home() {
             <div className="animate-fade-up">
               <Badge dark>360° E-Commerce Management &amp; Growth</Badge>
               <h1 className="mt-6 text-4xl font-extrabold leading-[1.06] tracking-tight text-white sm:text-5xl lg:text-[60px]">
-                Everything Your E-Commerce Business Needs to{" "}
-                <span className="text-gradient">Grow</span>.
+                More Sales on Every Marketplace{" "}
+                <span className="text-gradient">That Matters</span>.
               </h1>
               <p className="mt-6 max-w-xl text-base leading-relaxed text-slate-300 sm:text-lg">
-                Boost360 helps brands and marketplace sellers launch, manage,
-                optimize and scale their stores across the world&apos;s leading
-                e-commerce platforms.
+                Boost360 is your complete e-commerce growth team — from your
+                first listing to a multi-channel brand. One team handles
+                research, setup, listings, SEO, advertising and daily
+                operations across Amazon, Walmart, eBay, Etsy, Shopify and
+                TikTok Shop, so every part of your business pushes sales
+                forward.
               </p>
               <div className="mt-9 flex flex-col gap-4 sm:flex-row">
                 <Button size="lg" href="/get-a-quote" withArrow>
@@ -158,10 +167,10 @@ export default function Home() {
           <Reveal>
             <div className="text-center">
               <h2 className="text-2xl font-extrabold tracking-tight text-ink sm:text-3xl">
-                One Partner. Every Major Marketplace.
+                Sell Everywhere. Grow With One Team.
               </h2>
               <p className="mx-auto mt-3 max-w-2xl text-muted">
-                Manage and grow your e-commerce presence with one experienced team.
+                One team running your stores across every major marketplace — you focus on your products, we drive the sales.
               </p>
             </div>
           </Reveal>
@@ -243,6 +252,8 @@ export default function Home() {
         </div>
       </Section>
 
+      <Guarantees />
+
       {/* ============ PROCESS ============ */}
       <Section>
         <Reveal>
@@ -307,6 +318,11 @@ export default function Home() {
         </Reveal>
       </Section>
 
+      <ComparisonTable />
+
+      {/* ============ FREE AUDIT ============ */}
+      <FreeAuditCTA />
+
       {/* ============ CASE STUDIES TEASER ============ */}
       <Section className="bg-mist">
         <Reveal>
@@ -351,6 +367,8 @@ export default function Home() {
           </div>
         </Reveal>
       </Section>
+
+      <HomeFAQ />
 
       <CTASection />
     </>

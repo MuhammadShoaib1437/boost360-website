@@ -3,6 +3,7 @@ import { Section, SectionHeading, Badge } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { CTASection } from "@/components/ui/CTASection";
+import { NewsletterSignup } from "@/components/ui/NewsletterSignup";
 import { BlogCard } from "@/components/ui/Cards";
 import { Icons } from "@/components/ui/icons";
 import { INSIGHT_POSTS, INSIGHT_CATEGORIES } from "@/lib/data-content";
@@ -127,6 +128,10 @@ export default function InsightsPage() {
           </div>
         </Reveal>
       </Section>
+
+      <div className="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10">
+        <NewsletterSignup />
+      </div>
 
       <CTASection
         heading="Want these insights applied to your store?"

@@ -19,6 +19,18 @@ export function waLink(message: string = WA_DEFAULT_MESSAGE): string {
   return `https://wa.me/${WHATSAPP_INTL}?text=${encodeURIComponent(message)}`;
 }
 
+/** Calendly (or similar) booking link for free consultation calls.
+ *  Leave empty until the real link is provided — the booking button then
+ *  falls back to WhatsApp so it never leads anywhere dead. */
+export const CALENDLY_URL = "";
+
+/** Booking link: Calendly when configured, otherwise WhatsApp fallback. */
+export function bookCallLink(): string {
+  if (CALENDLY_URL) return CALENDLY_URL;
+  return waLink(
+    "Hi Boost360, I'd like to book a FREE consultation call. My store URL is: ",
+  );
+}
 /** Build a mailto link with pre-filled subject/body. */
 export function mailtoLink(subject: string, body: string): string {
   return `mailto:${EMAIL}?subject=${encodeURIComponent(

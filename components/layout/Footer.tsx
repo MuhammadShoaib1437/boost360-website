@@ -20,6 +20,7 @@ export function Footer() {
       title: "Company",
       links: [
         { label: "About", href: "/about" },
+        { label: "Pricing", href: "/pricing" },
         { label: "Case Studies", href: "/case-studies" },
         { label: "Insights", href: "/insights" },
         { label: "Contact", href: "/contact" },
