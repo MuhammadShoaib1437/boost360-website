@@ -81,7 +81,7 @@ export function MobileMenu({
               alt="Boost360Pro"
               width={2107}
               height={643}
-              className="h-9 w-auto"
+              className="h-10 w-auto"
             />
           </span>
           <button
