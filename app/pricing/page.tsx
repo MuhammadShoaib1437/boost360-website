@@ -7,60 +7,13 @@ import { FAQ } from "@/components/ui/FAQ";
 import { CTASection } from "@/components/ui/CTASection";
 import { Icons } from "@/components/ui/icons";
 import { waLink } from "@/lib/site";
-import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Boost360Pro pricing: fixed USD pricing for monthly management packages (Launch, Grow, Scale) plus one-time services — free store audit, listing optimization packs and full store setup.",
+    "Boost360Pro pricing: fixed USD pricing for one-time e-commerce services — free store audit, listing optimization packs and full store setup.",
   alternates: { canonical: "/pricing" },
 };
-
-const PACKAGES = [
-  {
-    name: "Launch",
-    tagline: "For new sellers getting started.",
-    price: "$100",
-    features: [
-      "Store setup on 1 marketplace",
-      "Up to 20 listings created & optimized",
-      "SEO titles, bullets & descriptions",
-      "Product image guidelines",
-      "Account health setup check",
-      "Email & WhatsApp support",
-    ],
-    featured: false,
-  },
-  {
-    name: "Grow",
-    tagline: "For active sellers ready to scale.",
-    price: "$200",
-    features: [
-      "Full management on up to 2 marketplaces",
-      "Unlimited listing optimization",
-      "Ongoing e-commerce SEO",
-      "PPC / ad campaign management",
-      "Weekly plain-language reports",
-      "Account health monitoring",
-      "Priority WhatsApp support",
-    ],
-    featured: true,
-  },
-  {
-    name: "Scale",
-    tagline: "For brands selling multi-channel.",
-    price: "$350",
-    features: [
-      "Everything in Grow, plus:",
-      "Up to 5 marketplaces managed",
-      "Multi-channel inventory coordination",
-      "Advanced PPC & scaling strategy",
-      "Monthly growth strategy call",
-      "Dedicated account manager",
-    ],
-    featured: false,
-  },
-];
 
 const ONE_TIME = [
   {
@@ -83,19 +36,19 @@ const ONE_TIME = [
 const PRICING_FAQS = [
   {
     q: "Are these prices final?",
-    a: "One-time services are fixed at the listed price — what you see is what you pay. Monthly packages show our standard rates; if your catalog is very large (500+ products) or you need extra marketplaces, we'll confirm the exact number on WhatsApp before you start — usually within a few hours.",
+    a: "Yes — every service on this page is fixed at the listed price. What you see is what you pay. If you need something ongoing like monthly management, message us on WhatsApp and we'll work out a custom quote.",
   },
   {
     q: "Is there a minimum commitment?",
-    a: "No. Monthly packages are month-to-month with no long-term lock-in. One-time services are fixed-scope: you approve the scope and price before any work starts.",
+    a: "No. Every service is a fixed-scope, one-time project: you approve the scope and price before any work starts.",
   },
   {
     q: "Do you charge a percentage of sales?",
-    a: "Our standard packages are flat monthly pricing so costs stay predictable. For larger scaling engagements we can discuss performance-linked arrangements — ask us on the free consultation call.",
+    a: "No. Every service has a flat fixed price so costs stay predictable. For larger ongoing engagements we can discuss custom arrangements — ask us on the free consultation call.",
   },
   {
     q: "Can I start small and upgrade later?",
-    a: "Absolutely — most sellers start with a listing pack or the Launch package, then move to full management once they see how we work. There's no penalty for upgrading.",
+    a: "Absolutely — most sellers start with the free audit or a listing pack, then move to a full store setup once they see how we work.",
   },
   {
     q: "What payment methods do you accept?",
@@ -117,120 +70,11 @@ export default function PricingPage() {
               </h1>
               <p className="mx-auto mt-5 max-w-2xl text-[17px] leading-relaxed text-muted">
                 Simple, fixed pricing in USD — no hidden fees, no surprises.
-                Monthly packages are month-to-month, one-time services are
-                fixed-scope. Message us your store link on WhatsApp and
-                we&apos;ll confirm everything, usually within hours.
+                Every service is fixed-scope: you approve everything before
+                work begins. Message us on WhatsApp and we&apos;ll confirm
+                your timeline, usually within hours.
               </p>
             </Reveal>
-          </div>
-        </Container>
-      </Section>
-
-      {/* ============ PACKAGES ============ */}
-      <Section className="bg-mist">
-        <Container>
-          <Reveal>
-            <SectionHeading
-              eyebrow="Monthly Packages"
-              title="Choose How Much Support You Need."
-              description="Month-to-month. Cancel anytime. Every package includes direct WhatsApp access to your team."
-            />
-          </Reveal>
-          <div className="mx-auto mt-12 grid max-w-5xl gap-6 lg:grid-cols-3">
-            {PACKAGES.map((p, i) => (
-              <Reveal key={p.name} delay={i * 90} className="h-full">
-                <div
-                  className={cn(
-                    "relative flex h-full flex-col rounded-3xl border p-8 transition-all duration-300 hover:-translate-y-1.5",
-                    p.featured
-                      ? "border-brand/40 bg-abyss text-white shadow-[0_30px_70px_-25px_rgba(9,105,246,0.55)]"
-                      : "border-[rgba(15,70,130,0.12)] bg-white",
-                  )}
-                >
-                  {p.featured && (
-                    <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-brand to-electric px-4 py-1 text-[12px] font-bold uppercase tracking-wider text-white">
-                      Most Popular
-                    </span>
-                  )}
-                  <h3
-                    className={cn(
-                      "text-xl font-extrabold tracking-tight",
-                      p.featured ? "text-white" : "text-ink",
-                    )}
-                  >
-                    {p.name}
-                  </h3>
-                  <p
-                    className={cn(
-                      "mt-1.5 text-[14.5px]",
-                      p.featured ? "text-slate-300" : "text-muted",
-                    )}
-                  >
-                    {p.tagline}
-                  </p>
-                  <p className="mt-6">
-                    <span
-                      className={cn(
-                        "text-4xl font-extrabold tracking-tight",
-                        p.featured ? "text-white" : "text-ink",
-                      )}
-                    >
-                      {p.price}
-                    </span>
-                    <span
-                      className={cn(
-                        "ml-2 text-sm",
-                        p.featured ? "text-slate-400" : "text-muted",
-                      )}
-                    >
-                      / month
-                    </span>
-                  </p>
-                  <p
-                    className={cn(
-                      "mt-2 text-[13px]",
-                      p.featured ? "text-slate-400" : "text-muted",
-                    )}
-                  >
-                    Flat monthly rate in USD. Custom quote for very large
-                    catalogs.
-                  </p>
-                  <ul className="mt-6 flex-1 space-y-3">
-                    {p.features.map((f) => (
-                      <li key={f} className="flex items-start gap-2.5 text-[14.5px]">
-                        <span
-                          className={cn(
-                            "mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full",
-                            p.featured
-                              ? "bg-ice/20 text-ice"
-                              : "bg-brand/10 text-brand",
-                          )}
-                        >
-                          <Icons.check className="h-3 w-3" />
-                        </span>
-                        <span className={p.featured ? "text-slate-200" : "text-ink"}>
-                          {f}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="mt-8">
-                    <Button
-                      variant={p.featured ? "primary" : "ghost"}
-                      className="w-full"
-                      href={waLink(
-                        `Hi Boost360Pro, I'm interested in the ${p.name} package (${p.price}/month). My store URL is: `,
-                      )}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Icons.whatsapp className="h-4 w-4" />
-                      Choose {p.name}
-                    </Button>
-                  </div>
-                </div>
-              </Reveal>
-            ))}
           </div>
         </Container>
       </Section>
@@ -241,7 +85,7 @@ export default function PricingPage() {
           <Reveal>
             <SectionHeading
               eyebrow="One-Time Services"
-              title="Not Ready for Monthly? Start Here."
+              title="Simple, Fixed-Price Services."
               description="Fixed-scope projects with upfront pricing. You approve everything before work begins."
             />
           </Reveal>
