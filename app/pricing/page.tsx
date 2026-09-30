@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Boost360Pro pricing: monthly management packages for e-commerce sellers, plus one-time services like store audits and listing optimization. Custom quotes based on your catalog and goals.",
+    "Boost360Pro pricing: fixed PKR pricing for monthly management packages (Launch, Grow, Scale) plus one-time services — free store audit, listing optimization packs and full store setup.",
   alternates: { canonical: "/pricing" },
 };
 
@@ -20,6 +20,7 @@ const PACKAGES = [
   {
     name: "Launch",
     tagline: "For new sellers getting started.",
+    price: "Rs. 50,000",
     features: [
       "Store setup on 1 marketplace",
       "Up to 20 listings created & optimized",
@@ -33,6 +34,7 @@ const PACKAGES = [
   {
     name: "Grow",
     tagline: "For active sellers ready to scale.",
+    price: "Rs. 100,000",
     features: [
       "Full management on up to 2 marketplaces",
       "Unlimited listing optimization",
@@ -47,6 +49,7 @@ const PACKAGES = [
   {
     name: "Scale",
     tagline: "For brands selling multi-channel.",
+    price: "Rs. 150,000",
     features: [
       "Everything in Grow, plus:",
       "Up to 5 marketplaces managed",
@@ -68,19 +71,19 @@ const ONE_TIME = [
   {
     title: "Listing Optimization Pack",
     desc: "10 listings rewritten with SEO titles, bullets, descriptions and backend terms.",
-    price: "Custom",
+    price: "Rs. 35,000",
   },
   {
     title: "Full Store Setup",
     desc: "New store launched end-to-end: account, branding, policies, first listings live.",
-    price: "Custom",
+    price: "Rs. 75,000",
   },
 ];
 
 const PRICING_FAQS = [
   {
-    q: "Why aren't exact prices listed?",
-    a: "Because honest pricing depends on your catalog size, how many marketplaces you sell on, and how much hands-on work you need. A seller with 15 products needs something very different from a brand with 500. Message us on WhatsApp with your store link and we'll give you an exact number — usually within a few hours.",
+    q: "Are these prices final?",
+    a: "One-time services are fixed at the listed price — what you see is what you pay. Monthly packages show our standard rates; if your catalog is very large (500+ products) or you need extra marketplaces, we'll confirm the exact number on WhatsApp before you start — usually within a few hours.",
   },
   {
     q: "Is there a minimum commitment?",
@@ -113,10 +116,10 @@ export default function PricingPage() {
                 Honest Pricing for Real Work.
               </h1>
               <p className="mx-auto mt-5 max-w-2xl text-[17px] leading-relaxed text-muted">
-                Every store is different, so final pricing depends on your
-                catalog and goals — but our packages are simple, monthly, and
-                have no hidden fees. Message us your store link for an exact
-                quote, usually within hours.
+                Simple, fixed pricing in PKR — no hidden fees, no surprises.
+                Monthly packages are month-to-month, one-time services are
+                fixed-scope. Message us your store link on WhatsApp and
+                we&apos;ll confirm everything, usually within hours.
               </p>
             </Reveal>
           </div>
@@ -172,7 +175,7 @@ export default function PricingPage() {
                         p.featured ? "text-white" : "text-ink",
                       )}
                     >
-                      Custom
+                      {p.price}
                     </span>
                     <span
                       className={cn(
@@ -189,7 +192,8 @@ export default function PricingPage() {
                       p.featured ? "text-slate-400" : "text-muted",
                     )}
                   >
-                    Exact price depends on your catalog size &amp; marketplaces.
+                    Flat monthly rate in PKR. Custom quote for very large
+                    catalogs.
                   </p>
                   <ul className="mt-6 flex-1 space-y-3">
                     {p.features.map((f) => (
@@ -215,13 +219,13 @@ export default function PricingPage() {
                       variant={p.featured ? "primary" : "ghost"}
                       className="w-full"
                       href={waLink(
-                        `Hi Boost360Pro, I'm interested in the ${p.name} package. My store URL is: `,
+                        `Hi Boost360Pro, I'm interested in the ${p.name} package (${p.price}/month). My store URL is: `,
                       )}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <Icons.whatsapp className="h-4 w-4" />
-                      Get Exact Price
+                      Choose {p.name}
                     </Button>
                   </div>
                 </div>
@@ -258,7 +262,7 @@ export default function PricingPage() {
                     <Button
                       variant="ghost"
                       className="w-full"
-                      href={waLink(`Hi Boost360Pro, I'm interested in: ${s.title}. `)}
+                      href={waLink(`Hi Boost360Pro, I'm interested in: ${s.title} (${s.price}). `)}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
