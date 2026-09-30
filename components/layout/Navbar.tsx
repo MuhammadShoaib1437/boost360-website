@@ -117,10 +117,10 @@ export function Navbar() {
         >
           <Link href="/" aria-label="Boost360Pro home" className="shrink-0">
             <Image
-              src="/logo.png"
+              src="/logo.png?v=2"
               alt="Boost360Pro — Complete E-Commerce Growth"
-              width={2024}
-              height={358}
+              width={1942}
+              height={347}
               className="h-8 w-auto sm:h-10"
               priority
             />
