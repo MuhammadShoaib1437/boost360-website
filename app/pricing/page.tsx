@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Boost360Pro pricing: fixed PKR pricing for monthly management packages (Launch, Grow, Scale) plus one-time services — free store audit, listing optimization packs and full store setup.",
+    "Boost360Pro pricing: fixed USD pricing for monthly management packages (Launch, Grow, Scale) plus one-time services — free store audit, listing optimization packs and full store setup.",
   alternates: { canonical: "/pricing" },
 };
 
@@ -20,7 +20,7 @@ const PACKAGES = [
   {
     name: "Launch",
     tagline: "For new sellers getting started.",
-    price: "Rs. 50,000",
+    price: "$100",
     features: [
       "Store setup on 1 marketplace",
       "Up to 20 listings created & optimized",
@@ -34,7 +34,7 @@ const PACKAGES = [
   {
     name: "Grow",
     tagline: "For active sellers ready to scale.",
-    price: "Rs. 100,000",
+    price: "$200",
     features: [
       "Full management on up to 2 marketplaces",
       "Unlimited listing optimization",
@@ -49,7 +49,7 @@ const PACKAGES = [
   {
     name: "Scale",
     tagline: "For brands selling multi-channel.",
-    price: "Rs. 150,000",
+    price: "$350",
     features: [
       "Everything in Grow, plus:",
       "Up to 5 marketplaces managed",
@@ -71,12 +71,12 @@ const ONE_TIME = [
   {
     title: "Listing Optimization Pack",
     desc: "10 listings rewritten with SEO titles, bullets, descriptions and backend terms.",
-    price: "Rs. 35,000",
+    price: "$60",
   },
   {
     title: "Full Store Setup",
     desc: "New store launched end-to-end: account, branding, policies, first listings live.",
-    price: "Rs. 75,000",
+    price: "$150",
   },
 ];
 
@@ -116,7 +116,7 @@ export default function PricingPage() {
                 Honest Pricing for Real Work.
               </h1>
               <p className="mx-auto mt-5 max-w-2xl text-[17px] leading-relaxed text-muted">
-                Simple, fixed pricing in PKR — no hidden fees, no surprises.
+                Simple, fixed pricing in USD — no hidden fees, no surprises.
                 Monthly packages are month-to-month, one-time services are
                 fixed-scope. Message us your store link on WhatsApp and
                 we&apos;ll confirm everything, usually within hours.
@@ -192,7 +192,7 @@ export default function PricingPage() {
                       p.featured ? "text-slate-400" : "text-muted",
                     )}
                   >
-                    Flat monthly rate in PKR. Custom quote for very large
+                    Flat monthly rate in USD. Custom quote for very large
                     catalogs.
                   </p>
                   <ul className="mt-6 flex-1 space-y-3">
