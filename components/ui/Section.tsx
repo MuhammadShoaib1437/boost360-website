@@ -99,3 +99,22 @@ export function Section({
     </section>
   );
 }
+
+/* Soft gradient transition strip between two sections.
+   Pass full Tailwind classes, e.g. from="from-abyss" to="to-white". */
+export function SectionFade({
+  from,
+  to,
+  className,
+}: {
+  from: string;
+  to: string;
+  className?: string;
+}) {
+  return (
+    <div
+      aria-hidden="true"
+      className={cn("h-12 bg-gradient-to-b sm:h-16", from, to, className)}
+    />
+  );
+}

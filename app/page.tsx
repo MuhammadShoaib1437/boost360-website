@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { Badge, SectionHeading, Section } from "@/components/ui/Section";
+import { Badge, SectionHeading, Section, SectionFade } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 import { CTASection } from "@/components/ui/CTASection";
 import {
@@ -160,6 +160,7 @@ export default function Home() {
           </div>
         </Container>
       </section>
+      <SectionFade from="from-abyss" to="to-white" />
 
       {/* ============ MARKETPLACE TRUST STRIP ============ */}
       <section className="border-b border-[rgba(15,70,130,0.1)] bg-white py-14 sm:py-16">
@@ -203,6 +204,7 @@ export default function Home() {
           ))}
         </div>
       </Section>
+      <SectionFade from="from-white" to="to-abyss" />
 
       {/* ============ 360 CONCEPT ============ */}
       <section className="relative overflow-hidden bg-abyss py-20 sm:py-24 lg:py-28">
@@ -224,6 +226,7 @@ export default function Home() {
           </Reveal>
         </Container>
       </section>
+      <SectionFade from="from-abyss" to="to-mist" />
 
       {/* ============ WHY BOOST360 ============ */}
       <Section className="bg-mist">
@@ -274,6 +277,7 @@ export default function Home() {
           </div>
         </Reveal>
       </Section>
+      <SectionFade from="from-white" to="to-abyss" />
 
       {/* ============ MARKETPLACE EXPERTISE ============ */}
       <section className="relative overflow-hidden bg-abyss py-20 sm:py-24 lg:py-28">
@@ -302,6 +306,7 @@ export default function Home() {
           </div>
         </Container>
       </section>
+      <SectionFade from="from-abyss" to="to-white" />
 
       {/* ============ BEFORE / AFTER ============ */}
       <Section>
@@ -319,9 +324,11 @@ export default function Home() {
       </Section>
 
       <ComparisonTable />
+      <SectionFade from="from-mist" to="to-abyss" />
 
       {/* ============ FREE AUDIT ============ */}
       <FreeAuditCTA />
+      <SectionFade from="from-abyss" to="to-mist" />
 
       {/* ============ CASE STUDIES TEASER ============ */}
       <Section className="bg-mist">
@@ -369,6 +376,7 @@ export default function Home() {
       </Section>
 
       <HomeFAQ />
+      <SectionFade from="from-white" to="to-abyss" />
 
       <CTASection />
     </>
