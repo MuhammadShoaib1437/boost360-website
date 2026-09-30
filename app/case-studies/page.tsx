@@ -9,7 +9,7 @@ import { waLink } from "@/lib/site";
 export const metadata = {
   title: "Case Studies — Illustrative E-Commerce Examples",
   description:
-    "Illustrative examples of how Boost360 approaches common e-commerce challenges: listing optimization, multi-channel management, catalog cleanup, store launches and ad restructuring.",
+    "Illustrative examples of how Boost360Pro approaches common e-commerce challenges: listing optimization, multi-channel management, catalog cleanup, store launches and ad restructuring.",
   alternates: { canonical: "/case-studies" },
 };
 
@@ -174,7 +174,7 @@ export default function CaseStudiesPage() {
                   size="lg"
                   variant="whatsapp"
                   href={waLink(
-                    "Hi Boost360, I'm facing a challenge with my store and would like to discuss it.",
+                    "Hi Boost360Pro, I'm facing a challenge with my store and would like to discuss it.",
                   )}
                   target="_blank"
                   rel="noopener noreferrer"

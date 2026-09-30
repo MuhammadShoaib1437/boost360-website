@@ -166,7 +166,7 @@ export default async function InsightPostPage({
                   Written by
                 </p>
                 <p className="mt-1.5 text-lg font-bold tracking-tight text-ink">
-                  The Boost360 Team
+                  The Boost360Pro Team
                 </p>
                 <p className="mt-2 text-[14.5px] leading-relaxed text-muted">
                   We work with marketplace sellers every day — on listings,

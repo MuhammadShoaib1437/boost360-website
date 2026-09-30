@@ -11,7 +11,7 @@ import { INSIGHT_POSTS, INSIGHT_CATEGORIES } from "@/lib/data-content";
 export const metadata = {
   title: "Insights for Online Sellers",
   description:
-    "Practical guides for marketplace sellers: Marketplace SEO, Amazon, Etsy, eBay, advertising and e-commerce growth — written by the Boost360 team.",
+    "Practical guides for marketplace sellers: Marketplace SEO, Amazon, Etsy, eBay, advertising and e-commerce growth — written by the Boost360Pro team.",
   alternates: { canonical: "/insights" },
 };
 

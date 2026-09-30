@@ -115,12 +115,12 @@ export function Navbar() {
           aria-label="Main navigation"
           className="mx-auto flex w-full max-w-7xl items-center justify-between pl-2 pr-5 sm:pl-3 sm:pr-8 lg:pl-4 lg:pr-10"
         >
-          <Link href="/" aria-label="Boost360 home" className="shrink-0">
+          <Link href="/" aria-label="Boost360Pro home" className="shrink-0">
             <Image
               src="/logo.png"
-              alt="Boost360 — Complete E-Commerce Growth"
-              width={1524}
-              height={358}
+              alt="Boost360Pro — Complete E-Commerce Growth"
+              width={2981}
+              height={499}
               className="h-10 w-auto sm:h-12"
               priority
             />

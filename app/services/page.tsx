@@ -14,7 +14,7 @@ import { waLink } from "@/lib/site";
 export const metadata: Metadata = {
   title: "E-Commerce Services",
   description:
-    "Boost360 services: marketplace management, product research, listing optimization, e-commerce SEO, PPC advertising, store setup, account health and multi-channel management.",
+    "Boost360Pro services: marketplace management, product research, listing optimization, e-commerce SEO, PPC advertising, store setup, account health and multi-channel management.",
   alternates: { canonical: "/services" },
 };
 
@@ -43,8 +43,8 @@ const WORK_STEPS = [
 
 const GENERAL_FAQS = [
   {
-    q: "What exactly does Boost360 do?",
-    a: "Boost360 is a full-service e-commerce agency. We help sellers and brands launch, manage, optimize and grow stores across Amazon, Walmart Marketplace, eBay, Etsy, Shopify and TikTok Shop — from store setup and product listings to SEO, advertising and day-to-day account operations.",
+    q: "What exactly does Boost360Pro do?",
+    a: "Boost360Pro is a full-service e-commerce agency. We help sellers and brands launch, manage, optimize and grow stores across Amazon, Walmart Marketplace, eBay, Etsy, Shopify and TikTok Shop — from store setup and product listings to SEO, advertising and day-to-day account operations.",
   },
   {
     q: "Do you guarantee sales, rankings or results?",
@@ -80,7 +80,7 @@ export default function ServicesPage() {
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-300">
               From launching your first store to managing catalogs across six
-              marketplaces, Boost360 covers the full e-commerce lifecycle. Pick
+              marketplaces, Boost360Pro covers the full e-commerce lifecycle. Pick
               one service or hand us the whole operation — either way, every
               change is documented and every report is honest.
             </p>
@@ -92,7 +92,7 @@ export default function ServicesPage() {
                 size="lg"
                 variant="whatsapp"
                 href={waLink(
-                  "Hi Boost360, I'd like to discuss which of your services fits my store.",
+                  "Hi Boost360Pro, I'd like to discuss which of your services fits my store.",
                 )}
                 target="_blank"
                 rel="noopener noreferrer"

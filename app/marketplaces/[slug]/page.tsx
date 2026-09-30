@@ -88,7 +88,7 @@ export default async function MarketplaceDetailPage({
                 size="lg"
                 variant="whatsapp"
                 href={waLink(
-                  `Hi Boost360, I sell on ${m.name} and would like help.`,
+                  `Hi Boost360Pro, I sell on ${m.name} and would like help.`,
                 )}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -160,14 +160,14 @@ export default async function MarketplaceDetailPage({
         </Container>
       </section>
 
-      {/* (d) How Boost360 helps */}
+      {/* (d) How Boost360Pro helps */}
       <Section>
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
           <Reveal>
             <SectionHeading
               align="left"
               eyebrow="Our role"
-              title="How Boost360 helps"
+              title="How Boost360Pro helps"
               description={`Exactly what we do for ${m.name} sellers — no vague promises, just the work.`}
             />
           </Reveal>

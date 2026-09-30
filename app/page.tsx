@@ -28,9 +28,9 @@ import { CASE_STUDIES, INSIGHT_POSTS } from "@/lib/data-content";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Boost360 — Complete E-Commerce Growth",
+  title: "Boost360Pro — Complete E-Commerce Growth",
   description:
-    "Boost360 helps brands and marketplace sellers launch, manage, optimize and scale across Amazon, Walmart, eBay, Etsy, Shopify and TikTok Shop.",
+    "Boost360Pro helps brands and marketplace sellers launch, manage, optimize and scale across Amazon, Walmart, eBay, Etsy, Shopify and TikTok Shop.",
   alternates: { canonical: "/" },
 };
 
@@ -91,14 +91,14 @@ const jsonLd = {
     {
       "@type": "Organization",
       "@id": `${SITE_URL}/#organization`,
-      name: "Boost360",
+      name: "Boost360Pro",
       url: SITE_URL,
       slogan: "Complete E-Commerce Growth",
       logo: `${SITE_URL}/logo.png`,
     },
     {
       "@type": "ProfessionalService",
-      name: "Boost360",
+      name: "Boost360Pro",
       url: SITE_URL,
       description:
         "Full-service e-commerce management, optimization and growth: marketplace management, product research, listing optimization, marketplace SEO, PPC and store setup.",
@@ -133,7 +133,7 @@ export default function Home() {
                 <span className="text-gradient">That Matters</span>.
               </h1>
               <p className="mt-6 max-w-xl text-base leading-relaxed text-slate-300 sm:text-lg">
-                Boost360 is your complete e-commerce growth team — from your
+                Boost360Pro is your complete e-commerce growth team — from your
                 first listing to a multi-channel brand. One team handles
                 research, setup, listings, SEO, advertising and daily
                 operations across Amazon, Walmart, eBay, Etsy, Shopify and
@@ -194,7 +194,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="What We Do"
             title="Everything You Need to Sell Smarter."
-            description="From launching your first listing to managing multi-channel operations, Boost360 provides practical e-commerce support designed around your business."
+            description="From launching your first listing to managing multi-channel operations, Boost360Pro provides practical e-commerce support designed around your business."
           />
         </Reveal>
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -228,7 +228,7 @@ export default function Home() {
       {/* ============ WHY BOOST360 ============ */}
       <Section className="bg-mist">
         <Reveal>
-          <SectionHeading title="Why Sellers Work With Boost360" />
+          <SectionHeading title="Why Sellers Work With Boost360Pro" />
         </Reveal>
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {WHY.map((w, i) => {
@@ -351,7 +351,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="Insights"
             title="Practical E-Commerce Knowledge."
-            description="Guides and explainers from the Boost360 team — no hype, just how things work."
+            description="Guides and explainers from the Boost360Pro team — no hype, just how things work."
           />
         </Reveal>
         <div className="mt-12 grid gap-5 md:grid-cols-3">

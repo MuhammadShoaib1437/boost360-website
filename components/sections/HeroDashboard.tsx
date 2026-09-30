@@ -5,7 +5,7 @@ import { Icons } from "../ui/icons";
 
 /**
  * Animated analytics dashboard visual for the hero.
- * All figures are SAMPLE UI demonstration data — not Boost360 client results.
+ * All figures are SAMPLE UI demonstration data — not Boost360Pro client results.
  */
 
 /** Adds `is-visible` whenever the element is in view (removed when scrolled away,

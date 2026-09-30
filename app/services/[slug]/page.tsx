@@ -100,7 +100,7 @@ export default async function ServicePage({
     description: service.metaDescription,
     provider: {
       "@type": "Organization",
-      name: "Boost360",
+      name: "Boost360Pro",
       url: SITE_URL,
     },
     areaServed: "Worldwide",
@@ -144,7 +144,7 @@ export default async function ServicePage({
                 size="lg"
                 variant="whatsapp"
                 href={waLink(
-                  `Hi Boost360, I'm interested in your ${service.title} service.`,
+                  `Hi Boost360Pro, I'm interested in your ${service.title} service.`,
                 )}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -248,7 +248,7 @@ export default async function ServicePage({
         </div>
       </Section>
 
-      {/* (g) Why Boost360 — dark band */}
+      {/* (g) Why Boost360Pro — dark band */}
       <section className="relative overflow-hidden bg-abyss py-16 sm:py-20">
         <div aria-hidden="true" className="pointer-events-none absolute inset-0">
           <div className="absolute left-1/2 top-0 h-[280px] w-[640px] -translate-x-1/2 rounded-full bg-electric/15 blur-[120px]" />
@@ -257,7 +257,7 @@ export default async function ServicePage({
         <Container className="relative">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-              Why Boost360
+              Why Boost360Pro
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-slate-300">
               What makes working with us different — in three plain statements.
@@ -285,7 +285,7 @@ export default async function ServicePage({
               size="lg"
               variant="whatsapp"
               href={waLink(
-                `Hi Boost360, I have a question about your ${service.title} service.`,
+                `Hi Boost360Pro, I have a question about your ${service.title} service.`,
               )}
               target="_blank"
               rel="noopener noreferrer"

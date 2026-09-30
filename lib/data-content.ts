@@ -132,7 +132,7 @@ export const INSIGHT_POSTS: InsightPost[] = [
       "Marketplace search engines rank products, not pages. Here's how the three big ones think — and what that means for your listings.",
     date: "2026-09-20",
     readingTime: "8 min read",
-    author: "Boost360 Team",
+    author: "Boost360Pro Team",
     metaDescription:
       "How eBay Cassini, Etsy search and Amazon search rank products — and what sellers should optimize in every listing.",
     sections: [
@@ -198,7 +198,7 @@ export const INSIGHT_POSTS: InsightPost[] = [
       "A practical checklist for auditing any marketplace listing — the same one we use before rewriting a single word.",
     date: "2026-09-12",
     readingTime: "6 min read",
-    author: "Boost360 Team",
+    author: "Boost360Pro Team",
     metaDescription:
       "A practical listing optimization checklist covering titles, images, attributes and descriptions for marketplace sellers.",
     sections: [
@@ -268,7 +268,7 @@ export const INSIGHT_POSTS: InsightPost[] = [
       "Suppressed listings, policy warnings and defect rates build up quietly. Here's a monitoring routine that catches them early.",
     date: "2026-09-05",
     readingTime: "7 min read",
-    author: "Boost360 Team",
+    author: "Boost360Pro Team",
     metaDescription:
       "A practical Amazon account health monitoring routine: listing status, policy notifications and performance metrics.",
     sections: [
@@ -321,7 +321,7 @@ export const INSIGHT_POSTS: InsightPost[] = [
       "Etsy gives you 13 tags, one title and a set of attributes. Most shops waste all three. Here's how to use them properly.",
     date: "2026-08-28",
     readingTime: "6 min read",
-    author: "Boost360 Team",
+    author: "Boost360Pro Team",
     metaDescription:
       "How to use Etsy's 13 tags, titles and attributes for search visibility — a practical guide for Etsy sellers.",
     sections: [

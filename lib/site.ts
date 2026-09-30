@@ -1,9 +1,9 @@
 /** Central site constants — single source of truth for contact details. */
 
-export const SITE_NAME = "Boost360";
+export const SITE_NAME = "Boost360Pro";
 export const SITE_TAGLINE = "Complete E-Commerce Growth";
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.boost360.com";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.boost360pro.com";
 
 /** Display format shown to visitors. */
 export const WHATSAPP_DISPLAY = "+92 342 2625439";
@@ -12,7 +12,7 @@ export const WHATSAPP_INTL = "923422625439";
 export const EMAIL = "helloshoaib01@gmail.com";
 
 export const WA_DEFAULT_MESSAGE =
-  "Hi Boost360, I'm interested in your e-commerce services and would like to discuss my store.";
+  "Hi Boost360Pro, I'm interested in your e-commerce services and would like to discuss my store.";
 
 /** Build a wa.me deep link with a pre-filled message. */
 export function waLink(message: string = WA_DEFAULT_MESSAGE): string {
@@ -28,7 +28,7 @@ export const CALENDLY_URL = "";
 export function bookCallLink(): string {
   if (CALENDLY_URL) return CALENDLY_URL;
   return waLink(
-    "Hi Boost360, I'd like to book a FREE consultation call. My store URL is: ",
+    "Hi Boost360Pro, I'd like to book a FREE consultation call. My store URL is: ",
   );
 }
 /** Build a mailto link with pre-filled subject/body. */

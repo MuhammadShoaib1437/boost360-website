@@ -111,7 +111,7 @@ export default function GetAQuotePage() {
                 <div className="mt-5">
                   <Button
                     variant="whatsapp"
-                    href={waLink("Hi Boost360, I'd like a free consultation.")}
+                    href={waLink("Hi Boost360Pro, I'd like a free consultation.")}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full"

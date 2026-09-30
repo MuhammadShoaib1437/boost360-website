@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Boost360 pricing: monthly management packages for e-commerce sellers, plus one-time services like store audits and listing optimization. Custom quotes based on your catalog and goals.",
+    "Boost360Pro pricing: monthly management packages for e-commerce sellers, plus one-time services like store audits and listing optimization. Custom quotes based on your catalog and goals.",
   alternates: { canonical: "/pricing" },
 };
 
@@ -215,7 +215,7 @@ export default function PricingPage() {
                       variant={p.featured ? "primary" : "ghost"}
                       className="w-full"
                       href={waLink(
-                        `Hi Boost360, I'm interested in the ${p.name} package. My store URL is: `,
+                        `Hi Boost360Pro, I'm interested in the ${p.name} package. My store URL is: `,
                       )}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -258,7 +258,7 @@ export default function PricingPage() {
                     <Button
                       variant="ghost"
                       className="w-full"
-                      href={waLink(`Hi Boost360, I'm interested in: ${s.title}. `)}
+                      href={waLink(`Hi Boost360Pro, I'm interested in: ${s.title}. `)}
                       target="_blank"
                       rel="noopener noreferrer"
                     >

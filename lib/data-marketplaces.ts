@@ -21,9 +21,9 @@ export const MARKETPLACES: Marketplace[] = [
     tagline: "Marketplace Management · Listings · SEO · PPC · Catalog Support",
     h1: "Amazon Seller Support That Covers the Whole Operation",
     intro:
-      "Amazon rewards sellers who get the details right: complete listings, compliant catalogs, healthy account metrics and well-structured advertising. Boost360 supports Amazon sellers across all of it — from new product listings to ongoing catalog and account management.",
+      "Amazon rewards sellers who get the details right: complete listings, compliant catalogs, healthy account metrics and well-structured advertising. Boost360Pro supports Amazon sellers across all of it — from new product listings to ongoing catalog and account management.",
     metaDescription:
-      "Boost360 Amazon services: listing optimization, catalog support, Amazon SEO, PPC management and account health for Amazon sellers.",
+      "Boost360Pro Amazon services: listing optimization, catalog support, Amazon SEO, PPC management and account health for Amazon sellers.",
     services: [
       {
         title: "Listing Creation & Optimization",
@@ -103,9 +103,9 @@ export const MARKETPLACES: Marketplace[] = [
     tagline: "Catalog Management · Listing Optimization · Account Health",
     h1: "Walmart Marketplace, Managed With Precision",
     intro:
-      "Walmart Marketplace has strict listing standards and a catalog system that punishes sloppy data. Boost360 helps sellers meet Walmart's requirements cleanly — accurate catalogs, optimized listings and steady account health.",
+      "Walmart Marketplace has strict listing standards and a catalog system that punishes sloppy data. Boost360Pro helps sellers meet Walmart's requirements cleanly — accurate catalogs, optimized listings and steady account health.",
     metaDescription:
-      "Boost360 Walmart Marketplace services: catalog management, listing optimization, account health and store operations.",
+      "Boost360Pro Walmart Marketplace services: catalog management, listing optimization, account health and store operations.",
     services: [
       {
         title: "Catalog Management",
@@ -177,9 +177,9 @@ export const MARKETPLACES: Marketplace[] = [
     tagline: "SEO Listings · Store Management · Item Specifics · Policy Review",
     h1: "eBay SEO and Store Management Done Properly",
     intro:
-      "eBay's Cassini search rewards complete, relevant listings from healthy sellers. Boost360 builds eBay listings the way Cassini reads them — keyword-led 80-character titles, fully completed item specifics, correct categories — and manages stores for long-term standing.",
+      "eBay's Cassini search rewards complete, relevant listings from healthy sellers. Boost360Pro builds eBay listings the way Cassini reads them — keyword-led 80-character titles, fully completed item specifics, correct categories — and manages stores for long-term standing.",
     metaDescription:
-      "Boost360 eBay services: Cassini-friendly SEO listings, item specifics, store management and policy review.",
+      "Boost360Pro eBay services: Cassini-friendly SEO listings, item specifics, store management and policy review.",
     services: [
       {
         title: "SEO Listings",
@@ -251,9 +251,9 @@ export const MARKETPLACES: Marketplace[] = [
     tagline: "SEO · Keyword Research · Digital & Physical Products",
     h1: "Etsy SEO for Handmade, Digital and Physical Products",
     intro:
-      "Etsy discovery runs on tags, titles and attributes — and most shops use them badly. Boost360 optimizes Etsy listings the way Etsy's search actually reads them: all 13 tags as buyer phrases, keyword-led titles, and every attribute filled.",
+      "Etsy discovery runs on tags, titles and attributes — and most shops use them badly. Boost360Pro optimizes Etsy listings the way Etsy's search actually reads them: all 13 tags as buyer phrases, keyword-led titles, and every attribute filled.",
     metaDescription:
-      "Boost360 Etsy services: Etsy SEO, keyword research, tag and title optimization for digital and physical products.",
+      "Boost360Pro Etsy services: Etsy SEO, keyword research, tag and title optimization for digital and physical products.",
     services: [
       {
         title: "Etsy SEO",
@@ -329,9 +329,9 @@ export const MARKETPLACES: Marketplace[] = [
     tagline: "Store Setup · Product Pages · Catalog & Store Optimization",
     h1: "Shopify Stores Built to Sell, Not Just to Exist",
     intro:
-      "Shopify gives you a store, not traffic — everything else is on you. Boost360 builds clean, fast Shopify storefronts with product pages structured to convert, then supports catalog management and ongoing optimization.",
+      "Shopify gives you a store, not traffic — everything else is on you. Boost360Pro builds clean, fast Shopify storefronts with product pages structured to convert, then supports catalog management and ongoing optimization.",
     metaDescription:
-      "Boost360 Shopify services: store setup, product page optimization, catalog management and store optimization.",
+      "Boost360Pro Shopify services: store setup, product page optimization, catalog management and store optimization.",
     services: [
       {
         title: "Store Setup",
@@ -403,9 +403,9 @@ export const MARKETPLACES: Marketplace[] = [
     tagline: "Product Listings · Catalog Management · Shop Optimization",
     h1: "TikTok Shop, Set Up for Discovery Commerce",
     intro:
-      "TikTok Shop blends content and commerce — but behind every viral product is a clean catalog, compliant listings and a well-run shop. Boost360 handles the operational foundation so your products are ready when attention arrives.",
+      "TikTok Shop blends content and commerce — but behind every viral product is a clean catalog, compliant listings and a well-run shop. Boost360Pro handles the operational foundation so your products are ready when attention arrives.",
     metaDescription:
-      "Boost360 TikTok Shop services: product listings, catalog management, shop optimization and marketplace operations.",
+      "Boost360Pro TikTok Shop services: product listings, catalog management, shop optimization and marketplace operations.",
     services: [
       {
         title: "Product Listings",

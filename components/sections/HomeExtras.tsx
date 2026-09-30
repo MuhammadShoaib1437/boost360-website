@@ -92,7 +92,7 @@ export function FreeAuditCTA() {
                 variant="whatsapp"
                 size="lg"
                 href={waLink(
-                  "Hi Boost360, I'd like a FREE 10-point store audit. My store URL is: ",
+                  "Hi Boost360Pro, I'd like a FREE 10-point store audit. My store URL is: ",
                 )}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -150,9 +150,9 @@ export function ComparisonTable() {
     <Section className="bg-mist">
       <Reveal>
         <SectionHeading
-          eyebrow="Why Boost360"
+          eyebrow="Why Boost360Pro"
           title="A Smarter Way to Grow."
-          description="Selling online takes consistent expert work. Here's how working with Boost360 compares to the alternatives."
+          description="Selling online takes consistent expert work. Here's how working with Boost360Pro compares to the alternatives."
         />
       </Reveal>
       <Reveal delay={100}>
@@ -164,7 +164,7 @@ export function ComparisonTable() {
                   <span className="sr-only">Factor</span>
                 </th>
                 <th className="bg-brand/5 px-6 py-4 text-[15px] font-extrabold text-brand">
-                  Boost360
+                  Boost360Pro
                 </th>
                 <th className="px-6 py-4 text-[15px] font-bold text-ink">
                   Doing It Yourself

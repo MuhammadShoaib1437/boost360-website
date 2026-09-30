@@ -39,7 +39,7 @@ export default function NotFound() {
           </Button>
           <Button size="lg" variant="secondary" href="/contact">
             <Icons.mail className="h-5 w-5" />
-            Contact Boost360
+            Contact Boost360Pro
           </Button>
         </div>
       </Container>

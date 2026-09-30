@@ -87,7 +87,7 @@ export function ContactForm() {
   function buildMessage(): string {
     const f = fields;
     return [
-      "Hello Boost360,",
+      "Hello Boost360Pro,",
       "",
       "I'd like to discuss your e-commerce services.",
       "",
@@ -132,7 +132,7 @@ export function ContactForm() {
     ]
       .filter(Boolean)
       .join("\n");
-    window.location.href = mailtoLink("Boost360 Service Inquiry", body);
+    window.location.href = mailtoLink("Boost360Pro Service Inquiry", body);
   };
 
   const field = (

@@ -7,7 +7,7 @@ import { EMAIL, mailtoLink } from "@/lib/site";
 
 /**
  * Simple newsletter capture without a backend: the signup opens the
- * visitor's email client with a pre-filled subscription email to Boost360.
+ * visitor's email client with a pre-filled subscription email to Boost360Pro.
  * Honest and functional — no fake "subscribed!" claims.
  */
 export function NewsletterSignup() {
@@ -24,8 +24,8 @@ export function NewsletterSignup() {
     }
     setError("");
     window.location.href = mailtoLink(
-      "Newsletter signup — Boost360 growth tips",
-      `Hi Boost360,\n\nPlease add me to the monthly e-commerce growth tips newsletter.\n\nMy email: ${value}\n\nThanks!`,
+      "Newsletter signup — Boost360Pro growth tips",
+      `Hi Boost360Pro,\n\nPlease add me to the monthly e-commerce growth tips newsletter.\n\nMy email: ${value}\n\nThanks!`,
     );
     setSent(true);
   };

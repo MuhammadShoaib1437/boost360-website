@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Boost360 helps online sellers launch, manage, optimize and scale across Amazon, Walmart, eBay, Etsy, Shopify and TikTok Shop. Marketplace management, SEO, listings, PPC and growth strategy.",
+    "Boost360Pro helps online sellers launch, manage, optimize and scale across Amazon, Walmart, eBay, Etsy, Shopify and TikTok Shop. Marketplace management, SEO, listings, PPC and growth strategy.",
   keywords: [
     "ecommerce management",
     "marketplace management",

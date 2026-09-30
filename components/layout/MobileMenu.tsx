@@ -78,9 +78,9 @@ export function MobileMenu({
           <span className="inline-flex items-center rounded-lg bg-white px-2.5 py-1.5">
             <Image
               src="/logo.png"
-              alt="Boost360"
-              width={1524}
-              height={358}
+              alt="Boost360Pro"
+              width={2981}
+              height={499}
               className="h-8 w-auto"
             />
           </span>

@@ -28,7 +28,7 @@ export default function Error({
             Try again
           </button>
           <Button variant="ghost" href="/contact">
-            Contact Boost360
+            Contact Boost360Pro
           </Button>
         </div>
       </Container>

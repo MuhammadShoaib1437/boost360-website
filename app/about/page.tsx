@@ -10,9 +10,9 @@ import { SERVICES } from "@/lib/data-services";
 import { MARKETPLACES } from "@/lib/data-marketplaces";
 
 export const metadata = {
-  title: "About Boost360 — E-Commerce Expertise Built Around Sellers",
+  title: "About Boost360Pro — E-Commerce Expertise Built Around Sellers",
   description:
-    "Boost360 is a dedicated e-commerce services practice focused on marketplace sellers — helping stores on Amazon, Walmart, eBay, Etsy, Shopify and TikTok Shop grow.",
+    "Boost360Pro is a dedicated e-commerce services practice focused on marketplace sellers — helping stores on Amazon, Walmart, eBay, Etsy, Shopify and TikTok Shop grow.",
   alternates: { canonical: "/about" },
 };
 
@@ -80,13 +80,13 @@ export default function AboutPage() {
         <Container className="relative py-14 sm:py-20">
           <Reveal>
             <div className="max-w-3xl">
-              <Badge dark>About Boost360</Badge>
+              <Badge dark>About Boost360Pro</Badge>
               <h1 className="mt-6 text-4xl font-extrabold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl">
                 E-Commerce Expertise{" "}
                 <span className="text-gradient">Built Around Sellers.</span>
               </h1>
               <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
-                Boost360 exists for one reason: to help online sellers run
+                Boost360Pro exists for one reason: to help online sellers run
                 better stores. From listing quality to catalog health to
                 day-to-day marketplace operations, we do the detailed work
                 that turns effort into growth.
@@ -116,7 +116,7 @@ export default function AboutPage() {
               />
               <div className="mt-6 space-y-5 text-base leading-relaxed text-muted sm:text-lg">
                 <p>
-                  Boost360 is a dedicated e-commerce services practice focused
+                  Boost360Pro is a dedicated e-commerce services practice focused
                   on marketplace sellers — the people listing products on
                   Amazon, Walmart, eBay, Etsy, Shopify and TikTok Shop, and
                   dealing every day with the unglamorous work that keeps a
@@ -124,7 +124,7 @@ export default function AboutPage() {
                   account health.
                 </p>
                 <p>
-                  We started Boost360 because we kept seeing the same pattern:
+                  We started Boost360Pro because we kept seeing the same pattern:
                   sellers with good products losing visibility and sales to
                   fixable problems — incomplete listings, messy catalogs,
                   disconnected channels. The work that fixes those problems
@@ -317,10 +317,10 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      {/* Why Boost360 */}
+      {/* Why Boost360Pro */}
       <Section>
         <SectionHeading
-          eyebrow="Why Boost360"
+          eyebrow="Why Boost360Pro"
           title="Why sellers work with us"
         />
         <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-3">

@@ -14,9 +14,9 @@ import {
 } from "@/lib/site";
 
 export const metadata = {
-  title: "Contact Boost360 — Let's Talk About Your Store",
+  title: "Contact Boost360Pro — Let's Talk About Your Store",
   description:
-    "Reach Boost360 on WhatsApp or email. Tell us about your store — every inquiry is read by a real person.",
+    "Reach Boost360Pro on WhatsApp or email. Tell us about your store — every inquiry is read by a real person.",
   alternates: { canonical: "/contact" },
 };
 
@@ -103,7 +103,7 @@ export default function ContactPage() {
                   <Button
                     variant="ghost"
                     size="lg"
-                    href={mailtoLink("Hello Boost360", "Hi Boost360,")}
+                    href={mailtoLink("Hello Boost360Pro", "Hi Boost360Pro,")}
                     className="w-full sm:w-auto"
                   >
                     <Icons.mail className="h-5 w-5" />

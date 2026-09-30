@@ -39,7 +39,7 @@ export function CTASection({
                 size="lg"
                 variant="whatsapp"
                 href={waLink(
-                  "Hi Boost360, I'm interested in your e-commerce services.",
+                  "Hi Boost360Pro, I'm interested in your e-commerce services.",
                 )}
                 target="_blank"
                 rel="noopener noreferrer"

@@ -24,13 +24,13 @@ export const SERVICES: Service[] = [
       "End-to-end support for marketplace operations, catalogs, listings and day-to-day account management.",
     icon: "layers",
     metaDescription:
-      "Boost360 manages your marketplace operations end-to-end: catalogs, listings, orders workflow and day-to-day account management.",
+      "Boost360Pro manages your marketplace operations end-to-end: catalogs, listings, orders workflow and day-to-day account management.",
     heroTitle: "Marketplace Management, Handled End-to-End",
     heroIntro:
-      "Running a marketplace store means juggling listings, catalog data, pricing, messages and policy changes every single day. Boost360 takes over the operational load with a structured management workflow, so you can focus on sourcing, margins and growth.",
+      "Running a marketplace store means juggling listings, catalog data, pricing, messages and policy changes every single day. Boost360Pro takes over the operational load with a structured management workflow, so you can focus on sourcing, margins and growth.",
     overview: [
       "Marketplace management is the day-to-day work that keeps a store healthy: keeping catalog data accurate, listings complete and compliant, pricing consistent, and operational issues resolved before they become warnings. Most sellers lose time here — not because the work is hard, but because it never stops.",
-      "Boost360 provides ongoing management coverage across your marketplaces. We work from a clear operating checklist for each account, document every change we make, and keep you informed with straightforward updates — no jargon, no black box.",
+      "Boost360Pro provides ongoing management coverage across your marketplaces. We work from a clear operating checklist for each account, document every change we make, and keep you informed with straightforward updates — no jargon, no black box.",
     ],
     challenges: [
       "Listings go stale because nobody has time for regular upkeep",
@@ -73,10 +73,10 @@ export const SERVICES: Service[] = [
       "Research marketplace opportunities using available demand, competition and commercial information.",
     icon: "search",
     metaDescription:
-      "Boost360 product research: demand signals, competition review and commercial viability analysis before you commit inventory.",
+      "Boost360Pro product research: demand signals, competition review and commercial viability analysis before you commit inventory.",
     heroTitle: "Product Research Before You Commit Inventory",
     heroIntro:
-      "Choosing the wrong product is the most expensive mistake in e-commerce. Boost360 researches opportunities using available marketplace demand signals, competition data and commercial factors — so you commit inventory with open eyes, not guesses.",
+      "Choosing the wrong product is the most expensive mistake in e-commerce. Boost360Pro researches opportunities using available marketplace demand signals, competition data and commercial factors — so you commit inventory with open eyes, not guesses.",
     overview: [
       "Good product research answers three questions: is there real demand, can you compete, and does the math work after fees, shipping and ad costs? We pull together what's publicly observable on each marketplace — search behavior, category depth, review velocity, pricing bands — and organize it into a clear read.",
       "We don't sell 'winning product lists' or promise secret methods. We do structured, evidence-based research and show our working, including the risks and unknowns for every opportunity we review.",
@@ -118,10 +118,10 @@ export const SERVICES: Service[] = [
       "Improve titles, descriptions, images, attributes and overall listing quality.",
     icon: "tag",
     metaDescription:
-      "Boost360 listing optimization: stronger titles, descriptions, images and attributes that improve quality and conversion.",
+      "Boost360Pro listing optimization: stronger titles, descriptions, images and attributes that improve quality and conversion.",
     heroTitle: "Listings That Work Harder for Every Click",
     heroIntro:
-      "Most underperforming listings don't have a traffic problem — they have a listing problem. Weak titles, thin descriptions, missing attributes and poor image order quietly kill conversion. Boost360 rebuilds listings piece by piece against a quality checklist.",
+      "Most underperforming listings don't have a traffic problem — they have a listing problem. Weak titles, thin descriptions, missing attributes and poor image order quietly kill conversion. Boost360Pro rebuilds listings piece by piece against a quality checklist.",
     overview: [
       "Listing optimization is systematic, not creative guesswork. We audit each listing against what buyers and marketplace search actually respond to: a clear keyword-led title, scannable benefit-driven description, complete attributes, logical image hierarchy, and accurate categorization.",
       "Every optimized listing is delivered with a before/after summary so you can see exactly what changed and why. The goal is simple: when a buyer lands on your page, nothing about the listing gives them a reason to leave.",
@@ -163,10 +163,10 @@ export const SERVICES: Service[] = [
       "Keyword research and marketplace search optimization designed to improve discoverability.",
     icon: "chart",
     metaDescription:
-      "Boost360 e-commerce SEO: marketplace keyword research and search optimization for eBay, Etsy, Amazon and more.",
+      "Boost360Pro e-commerce SEO: marketplace keyword research and search optimization for eBay, Etsy, Amazon and more.",
     heroTitle: "Get Found Where Buyers Actually Search",
     heroIntro:
-      "Marketplace SEO isn't Google SEO — each marketplace runs its own search engine with its own rules. Boost360 researches the exact terms buyers type on your marketplace and rebuilds your titles, attributes and descriptions around them.",
+      "Marketplace SEO isn't Google SEO — each marketplace runs its own search engine with its own rules. Boost360Pro researches the exact terms buyers type on your marketplace and rebuilds your titles, attributes and descriptions around them.",
     overview: [
       "On eBay, eBay's Cassini search weighs titles, item specifics and seller signals. On Etsy, tags, titles and attributes drive discovery. On Amazon, backend terms and structured data matter. We work marketplace by marketplace, because one generic approach fits none of them.",
       "Our process starts with keyword research from marketplace-native sources — autocomplete, category structures and observed search behavior — then maps every keyword to the listing fields where it actually counts. No stuffing, no tricks: just complete, relevant, well-structured listings.",
@@ -208,10 +208,10 @@ export const SERVICES: Service[] = [
       "Support campaign setup, management and optimization using available advertising data.",
     icon: "megaphone",
     metaDescription:
-      "Boost360 PPC management: structured campaign setup, monitoring and optimization for Amazon, eBay, Etsy and Walmart ads.",
+      "Boost360Pro PPC management: structured campaign setup, monitoring and optimization for Amazon, eBay, Etsy and Walmart ads.",
     heroTitle: "Advertising With Structure, Not Guesswork",
     heroIntro:
-      "Marketplace ads can scale a good listing — or burn money on a bad one. Boost360 sets up campaigns with clear structure, sensible budgets and honest reporting, then optimizes based on what the data actually shows.",
+      "Marketplace ads can scale a good listing — or burn money on a bad one. Boost360Pro sets up campaigns with clear structure, sensible budgets and honest reporting, then optimizes based on what the data actually shows.",
     overview: [
       "We start with campaign fundamentals: which products deserve ad spend (hint: only listings that already convert), how campaigns are segmented, what budgets and bids make sense for your margins, and how performance gets measured.",
       "Ongoing management means regular search-term review, bid adjustments, budget reallocation toward what works, and plain-language reports. If the data says a campaign shouldn't run, we'll tell you — we'd rather save your budget than spend it.",
@@ -253,10 +253,10 @@ export const SERVICES: Service[] = [
       "Build and configure new stores and prepare them for launch.",
     icon: "rocket",
     metaDescription:
-      "Boost360 store setup: new marketplace stores and Shopify builds, configured correctly and prepared for launch.",
+      "Boost360Pro store setup: new marketplace stores and Shopify builds, configured correctly and prepared for launch.",
     heroTitle: "Launch Right the First Time",
     heroIntro:
-      "A rushed launch creates months of cleanup: wrong categories, thin listings, missing policies, broken settings. Boost360 sets up new stores methodically — every field, policy and listing prepared before you go live.",
+      "A rushed launch creates months of cleanup: wrong categories, thin listings, missing policies, broken settings. Boost360Pro sets up new stores methodically — every field, policy and listing prepared before you go live.",
     overview: [
       "Store setup covers the unglamorous details that determine whether a store starts healthy: account configuration, tax and shipping settings, return and payment policies, category structure, and launch-ready listings with complete data.",
       "For Shopify, that means a clean, fast storefront with proper product pages, navigation and checkout configuration. For marketplaces, it means compliant, complete seller profiles ready for their first sale.",
@@ -298,10 +298,10 @@ export const SERVICES: Service[] = [
       "Identify listing issues, marketplace warnings and operational risks.",
     icon: "shield",
     metaDescription:
-      "Boost360 account health: find listing issues, policy risks and warnings before they threaten your marketplace account.",
+      "Boost360Pro account health: find listing issues, policy risks and warnings before they threaten your marketplace account.",
     heroTitle: "Catch Problems Before They Cost You",
     heroIntro:
-      "Suppressed listings, policy warnings and defect rates rarely appear out of nowhere — they build up quietly. Boost360 audits your account health, flags risks early, and helps you fix issues systematically.",
+      "Suppressed listings, policy warnings and defect rates rarely appear out of nowhere — they build up quietly. Boost360Pro audits your account health, flags risks early, and helps you fix issues systematically.",
     overview: [
       "Account health work is diagnostic: we review your dashboards, listing statuses, policy notifications and performance metrics to find what's actually wrong — then prioritize fixes by risk, not by noise.",
       "We also review your listings and workflows against current marketplace policies, so you're not relying on last year's understanding of the rules. Prevention is cheaper than reinstatement, every time.",
@@ -343,10 +343,10 @@ export const SERVICES: Service[] = [
       "Coordinate products and store operations across multiple marketplaces.",
     icon: "globe",
     metaDescription:
-      "Boost360 multi-channel management: one coordinated workflow for selling across Amazon, eBay, Etsy, Walmart and more.",
+      "Boost360Pro multi-channel management: one coordinated workflow for selling across Amazon, eBay, Etsy, Walmart and more.",
     heroTitle: "One Operation Across Every Channel",
     heroIntro:
-      "Selling on three marketplaces shouldn't mean doing everything three times. Boost360 coordinates your products, listings and operations across channels with one workflow — consistent data, consistent pricing logic, consistent standards.",
+      "Selling on three marketplaces shouldn't mean doing everything three times. Boost360Pro coordinates your products, listings and operations across channels with one workflow — consistent data, consistent pricing logic, consistent standards.",
     overview: [
       "Multi-channel selling multiplies complexity: catalog data drifts between platforms, pricing goes inconsistent, and each marketplace's quirks demand different handling. Without coordination, every channel becomes its own full-time job.",
       "We build a single source of truth for your product data and a channel-aware process for listings, pricing and operations. Each marketplace still gets what its algorithm and buyers expect — but you manage it as one business, not five.",

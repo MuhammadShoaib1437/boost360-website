@@ -5,7 +5,7 @@ import { EMAIL, WHATSAPP_DISPLAY } from "@/lib/site";
 export const metadata = {
   title: "Privacy Policy",
   description:
-    "How Boost360 collects, uses and protects your information when you use our website and contact us.",
+    "How Boost360Pro collects, uses and protects your information when you use our website and contact us.",
   alternates: { canonical: "/privacy" },
 };
 
@@ -85,7 +85,7 @@ export default function PrivacyPage() {
           Last updated: September 2026
         </p>
         <p className="mt-6 text-[16.5px] leading-[1.85] text-muted">
-          Boost360 is an e-commerce services practice. This policy explains, in
+          Boost360Pro is an e-commerce services practice. This policy explains, in
           plain language, what information we collect when you use our website
           and how we use it.
         </p>

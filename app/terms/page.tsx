@@ -5,7 +5,7 @@ import { EMAIL, WHATSAPP_DISPLAY } from "@/lib/site";
 export const metadata = {
   title: "Terms of Service",
   description:
-    "The terms governing your use of the Boost360 website — plain-language conditions for browsing, contacting us and requesting services.",
+    "The terms governing your use of the Boost360Pro website — plain-language conditions for browsing, contacting us and requesting services.",
   alternates: { canonical: "/terms" },
 };
 
@@ -25,7 +25,7 @@ const SECTIONS: { h2: string; paragraphs: string[] }[] = [
   {
     h2: "Service inquiries",
     paragraphs: [
-      "Submitting a contact or quote form does not create a service agreement. Any engagement with Boost360 is agreed separately, in writing (including by email or WhatsApp), after we've discussed your needs — with clear scope, deliverables and terms that you approve first.",
+      "Submitting a contact or quote form does not create a service agreement. Any engagement with Boost360Pro is agreed separately, in writing (including by email or WhatsApp), after we've discussed your needs — with clear scope, deliverables and terms that you approve first.",
     ],
   },
   {
@@ -37,7 +37,7 @@ const SECTIONS: { h2: string; paragraphs: string[] }[] = [
   {
     h2: "Intellectual property",
     paragraphs: [
-      "The text, design and original content on this website belong to Boost360 unless stated otherwise. You're welcome to share our articles with credit and a link back, but please don't republish our content as your own or claim our work.",
+      "The text, design and original content on this website belong to Boost360Pro unless stated otherwise. You're welcome to share our articles with credit and a link back, but please don't republish our content as your own or claim our work.",
     ],
   },
   {
@@ -49,7 +49,7 @@ const SECTIONS: { h2: string; paragraphs: string[] }[] = [
   {
     h2: "No guaranteed results",
     paragraphs: [
-      "Boost360 cannot guarantee sales, rankings, advertising performance or marketplace approvals. E-commerce outcomes depend on many factors beyond any service provider's control — including your products, pricing, competition and platform policies. What we do guarantee is honest, documented, professional work.",
+      "Boost360Pro cannot guarantee sales, rankings, advertising performance or marketplace approvals. E-commerce outcomes depend on many factors beyond any service provider's control — including your products, pricing, competition and platform policies. What we do guarantee is honest, documented, professional work.",
     ],
   },
   {
@@ -82,7 +82,7 @@ export default function TermsPage() {
           Last updated: September 2026
         </p>
         <p className="mt-6 text-[16.5px] leading-[1.85] text-muted">
-          These terms explain the basics of using the Boost360 website and
+          These terms explain the basics of using the Boost360Pro website and
           working with us. We&apos;ve kept them in plain language on purpose.
         </p>
         <div className="mt-10">

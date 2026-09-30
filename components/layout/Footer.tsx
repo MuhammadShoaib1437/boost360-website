@@ -48,13 +48,13 @@ export function Footer() {
       <div className="mx-auto w-full max-w-7xl px-5 py-16 sm:px-8 lg:px-10 lg:py-20">
         <div className="grid gap-12 lg:grid-cols-[1.3fr_2fr]">
           <div>
-            <Link href="/" aria-label="Boost360 home">
+            <Link href="/" aria-label="Boost360Pro home">
               <span className="inline-flex items-center rounded-xl bg-white px-3 py-2">
                 <Image
                   src="/logo.png"
-                  alt="Boost360"
-                  width={1524}
-                  height={358}
+                  alt="Boost360Pro"
+                  width={2981}
+                  height={499}
                   className="h-10 w-auto"
                 />
               </span>
@@ -84,7 +84,7 @@ export function Footer() {
                 </span>
               </a>
               <a
-                href={mailtoLink("Hello Boost360", "Hi Boost360,")}
+                href={mailtoLink("Hello Boost360Pro", "Hi Boost360Pro,")}
                 className="flex items-center gap-3 transition-colors hover:text-white"
               >
                 <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-ice/10 text-ice">
@@ -125,7 +125,7 @@ export function Footer() {
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 sm:flex-row">
           <p className="text-sm text-slate-500">
-            © {year} Boost360. All rights reserved.
+            © {year} Boost360Pro. All rights reserved.
           </p>
           <div className="flex items-center gap-6 text-sm">
             <Link

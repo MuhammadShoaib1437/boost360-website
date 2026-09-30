@@ -112,7 +112,7 @@ export function QuoteForm() {
     if (step < 3) return next();
     if (!submit()) return;
     const msg = [
-      "Hello Boost360,",
+      "Hello Boost360Pro,",
       "",
       "I'd like a free consultation / quote for your e-commerce services.",
       "",

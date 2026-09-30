@@ -13,7 +13,7 @@ import { waLink } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Marketplaces We Support",
   description:
-    "Boost360 supports Amazon, Walmart, eBay, Etsy, Shopify and TikTok Shop sellers with marketplace-specific listings, SEO and management services.",
+    "Boost360Pro supports Amazon, Walmart, eBay, Etsy, Shopify and TikTok Shop sellers with marketplace-specific listings, SEO and management services.",
   alternates: { canonical: "/marketplaces" },
 };
 
@@ -110,7 +110,7 @@ export default function MarketplacesPage() {
                 size="lg"
                 variant="whatsapp"
                 href={waLink(
-                  "Hi Boost360, I'd like to learn more about your marketplace services.",
+                  "Hi Boost360Pro, I'd like to learn more about your marketplace services.",
                 )}
                 target="_blank"
                 rel="noopener noreferrer"
