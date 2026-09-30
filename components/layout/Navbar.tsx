@@ -119,9 +119,9 @@ export function Navbar() {
             <Image
               src="/logo.png"
               alt="Boost360Pro — Complete E-Commerce Growth"
-              width={2981}
-              height={499}
-              className="h-10 w-auto sm:h-12"
+              width={2024}
+              height={358}
+              className="h-8 w-auto sm:h-10"
               priority
             />
           </Link>
