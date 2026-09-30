@@ -102,6 +102,23 @@ export const Icons = {
         <path d="m13 6 6 6-6 6" />
       </>,
     ),
+  arrowUp: (p: SVGProps<SVGSVGElement>) =>
+    base(
+      p,
+      <>
+        <path d="M12 19V5" />
+        <path d="m6 11 6-6 6 6" />
+      </>,
+    ),
+  download: (p: SVGProps<SVGSVGElement>) =>
+    base(
+      p,
+      <>
+        <path d="M12 4v12" />
+        <path d="m7 11 5 5 5-5" />
+        <path d="M4 20h16" />
+      </>,
+    ),
   menu: (p: SVGProps<SVGSVGElement>) =>
     base(
       p,

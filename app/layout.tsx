@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppFloat } from "@/components/layout/WhatsAppFloat";
+import { BackToTop } from "@/components/layout/BackToTop";
 import { SITE_URL, SITE_NAME, SITE_TAGLINE } from "@/lib/site";
 
 const inter = Inter({
@@ -70,6 +71,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </main>
         <Footer />
         <WhatsAppFloat />
+        <BackToTop />
       </body>
     </html>
   );

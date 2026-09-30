@@ -87,7 +87,7 @@ export function FreeAuditCTA() {
             </p>
           </Reveal>
           <Reveal delay={120}>
-            <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <div className="mt-8 flex flex-col flex-wrap items-center justify-center gap-3 sm:flex-row">
               <Button
                 variant="whatsapp"
                 size="lg"
@@ -102,6 +102,15 @@ export function FreeAuditCTA() {
               </Button>
               <Button variant="secondary" size="lg" href="/get-a-quote" withArrow>
                 Get a Full Quote
+              </Button>
+              <Button
+                variant="secondary"
+                size="lg"
+                href="/audit-checklist.pdf"
+                download="Boost360Pro-10-Point-Store-Audit-Checklist.pdf"
+              >
+                <Icons.download className="h-5 w-5" />
+                Download Free Checklist
               </Button>
             </div>
           </Reveal>

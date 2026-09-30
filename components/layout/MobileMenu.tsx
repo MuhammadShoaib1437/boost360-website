@@ -75,15 +75,13 @@ export function MobileMenu({
         aria-label="Mobile navigation"
       >
         <div className="flex items-center justify-between border-b border-white/10 p-5">
-          <span className="inline-flex items-center rounded-lg bg-white px-2.5 py-1.5">
-            <Image
-              src="/logo-v3.png"
-              alt="Boost360Pro"
-              width={2107}
-              height={643}
-              className="h-10 w-auto"
-            />
-          </span>
+          <Image
+            src="/logo-v3.png"
+            alt="Boost360Pro"
+            width={2107}
+            height={643}
+            className="h-10 w-auto drop-shadow-[0_0_16px_rgba(90,160,255,0.45)]"
+          />
           <button
             type="button"
             onClick={onClose}
