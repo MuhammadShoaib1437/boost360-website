@@ -77,11 +77,11 @@ export function MobileMenu({
         <div className="flex items-center justify-between border-b border-white/10 p-5">
           <span className="inline-flex items-center rounded-lg bg-white px-2.5 py-1.5">
             <Image
-              src="/logo-v2.png"
+              src="/logo-v3.png"
               alt="Boost360Pro"
-              width={1942}
-              height={347}
-              className="h-8 w-auto"
+              width={2107}
+              height={643}
+              className="h-7 w-auto"
             />
           </span>
           <button

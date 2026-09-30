@@ -51,11 +51,11 @@ export function Footer() {
             <Link href="/" aria-label="Boost360Pro home">
               <span className="inline-flex items-center rounded-xl bg-white px-3 py-2">
                 <Image
-                  src="/logo-v2.png"
+                  src="/logo-v3.png"
                   alt="Boost360Pro"
-                  width={1942}
-                  height={347}
-                  className="h-8 w-auto"
+                  width={2107}
+                  height={643}
+                  className="h-7 w-auto"
                 />
               </span>
             </Link>

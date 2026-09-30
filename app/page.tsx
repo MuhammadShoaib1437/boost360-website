@@ -94,7 +94,7 @@ const jsonLd = {
       name: "Boost360Pro",
       url: SITE_URL,
       slogan: "Complete E-Commerce Growth",
-      logo: `${SITE_URL}/logo-v2.png`,
+      logo: `${SITE_URL}/logo-v3.png`,
     },
     {
       "@type": "ProfessionalService",
