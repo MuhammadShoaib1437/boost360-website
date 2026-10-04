@@ -24,7 +24,7 @@ const ONE_TIME = [
   {
     title: "Listing Optimization Pack",
     desc: "10 listings rewritten with SEO titles, bullets, descriptions and backend terms.",
-    price: "$60",
+    price: "$40",
   },
   {
     title: "Full Store Setup",
