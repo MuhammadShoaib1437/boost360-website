@@ -148,7 +148,7 @@ const COMPARISON_ROWS: { label: string; us: string; diy: string; hire: string }[
   },
   {
     label: "Cost structure",
-    us: "One predictable monthly plan",
+    us: "Fixed one-time pricing — no surprises",
     diy: "“Free” — but slow and costly in mistakes",
     hire: "Salary, benefits & overhead",
   },
@@ -229,7 +229,7 @@ const HOME_FAQS = [
   },
   {
     q: "How much does it cost?",
-    a: "It depends on how many marketplaces you sell on and how much hands-on management you need. We offer service packages starting from an affordable monthly plan, plus fully custom quotes. See our pricing page or ask us on WhatsApp for a fast answer.",
+    a: "Simple fixed pricing: a free 10-point store audit, a $40 Listing Optimization Pack (10 listings), and $150 Full Store Setup. No hidden fees, no lock-in. See our pricing page or ask us on WhatsApp for a fast answer.",
   },
   {
     q: "Do I keep ownership of my store and listings?",

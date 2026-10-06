@@ -85,8 +85,7 @@ function Panel({
 }
 
 /** Interactive Before/After listing comparison. Clearly labeled illustrative. */
-export function BeforeAfter() {
-  const [pos, setPos] = useState(50);
+export function BeforeAfter() {  const [pos, setPos] = useState(50);
   const trackRef = useRef<HTMLDivElement>(null);
   const dragging = useRef(false);
 
@@ -147,6 +146,39 @@ export function BeforeAfter() {
           Illustrative example
         </span>{" "}
         — drag the handle to compare. Not a client result.
+      </p>
+
+      {/* Concrete title transformation example */}
+      <div className="mx-auto mt-8 grid max-w-4xl gap-4 sm:grid-cols-2">
+        <div className="rounded-2xl border border-slate-200 bg-white p-6">
+          <p className="text-xs font-bold uppercase tracking-[0.14em] text-slate-400">
+            Before — typical weak title
+          </p>
+          <p className="mt-3 text-[15px] leading-relaxed text-slate-500">
+            “nice lamp for home decoration gift”
+          </p>
+          <ul className="mt-4 space-y-2 text-[13.5px] text-slate-500">
+            <li className="flex gap-2"><span aria-hidden="true">✕</span> No searchable keywords</li>
+            <li className="flex gap-2"><span aria-hidden="true">✕</span> No features buyers filter for</li>
+            <li className="flex gap-2"><span aria-hidden="true">✕</span> Wastes 60+ characters of title space</li>
+          </ul>
+        </div>
+        <div className="rounded-2xl border border-ice/40 bg-mist p-6">
+          <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#0d9b5c]">
+            After — optimized title
+          </p>
+          <p className="mt-3 text-[15px] font-medium leading-relaxed text-ink">
+            “Dimmable LED Table Lamp with USB Charging Port — Modern Bedside Lamp for Bedroom &amp; Office”
+          </p>
+          <ul className="mt-4 space-y-2 text-[13.5px] text-ink">
+            <li className="flex gap-2"><span aria-hidden="true" className="text-[#0d9b5c]">✓</span> Keywords buyers actually search</li>
+            <li className="flex gap-2"><span aria-hidden="true" className="text-[#0d9b5c]">✓</span> Features that match marketplace filters</li>
+            <li className="flex gap-2"><span aria-hidden="true" className="text-[#0d9b5c]">✓</span> Full title space working for clicks</li>
+          </ul>
+        </div>
+      </div>
+      <p className="mt-4 text-center text-[12.5px] text-muted/80">
+        Sample transformation for illustration — not a client listing.
       </p>
     </div>
   );

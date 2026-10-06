@@ -182,6 +182,56 @@ export default function AboutPage() {
         </Container>
       </section>
 
+      {/* Founder */}
+      <Section>
+        <div className="mx-auto grid max-w-5xl items-center gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-14">
+          <Reveal>
+            <div className="mx-auto flex aspect-square w-full max-w-[320px] items-center justify-center rounded-3xl bg-gradient-to-br from-brand via-electric to-ice shadow-[0_30px_70px_-30px_rgba(9,105,246,0.5)]">
+              <span className="text-7xl font-extrabold tracking-tight text-white sm:text-8xl">
+                MS
+              </span>
+            </div>
+          </Reveal>
+          <Reveal delay={120}>
+            <div>
+              <SectionHeading
+                align="left"
+                eyebrow="Meet the Founder"
+                title="Muhammad Shoaib"
+              />
+              <p className="mt-2 text-[15px] font-bold uppercase tracking-[0.18em] text-brand">
+                E-Commerce Specialist — eBay &amp; Etsy
+              </p>
+              <div className="mt-6 space-y-5 text-base leading-relaxed text-muted sm:text-lg">
+                <p>
+                  I&apos;m Shoaib — I live inside marketplace listings. For
+                  years I&apos;ve worked hands-on with eBay and Etsy sellers:
+                  rewriting titles that actually rank, rebuilding descriptions
+                  buyers read, fixing policy warnings, and turning messy
+                  catalogs into clean, searchable stores.
+                </p>
+                <p>
+                  Boost360Pro grew out of that work. Sellers kept asking for
+                  the same thing: someone who treats their store like it
+                  matters, explains everything in plain language, and never
+                  hides behind jargon or inflated promises. That&apos;s the
+                  standard every project here is held to.
+                </p>
+                <p>
+                  When you message us, you talk to me directly — not a ticket
+                  queue, not a junior account manager.
+                </p>
+              </div>
+              <div className="mt-8">
+                <Button href="/get-a-quote" withArrow>
+                  Work With Me Directly
+                </Button>
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </Section>
+
       {/* What We Do */}
       <Section>
         <SectionHeading

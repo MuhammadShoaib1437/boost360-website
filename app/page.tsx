@@ -148,6 +148,20 @@ export default function Home() {
                   Explore Our Services
                 </Button>
               </div>
+              <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-2 text-[13.5px] font-medium text-slate-300">
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="text-growth">✓</span> Free 10-point store audit
+                </span>
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="text-growth">✓</span> Fixed one-time pricing
+                </span>
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="text-growth">✓</span> No lock-in
+                </span>
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="text-growth">✓</span> Direct WhatsApp support
+                </span>
+              </div>
               <p className="mt-8 text-[13px] font-semibold uppercase tracking-[0.22em] text-slate-400">
                 Strategy <span className="mx-1.5 text-ice">•</span> Management{" "}
                 <span className="mx-1.5 text-ice">•</span> Optimization{" "}
