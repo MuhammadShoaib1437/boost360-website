@@ -1,30 +1,26 @@
 import type { MetadataRoute } from "next";
-import { SITE_URL } from "@/lib/site";
-import { SERVICES } from "@/lib/data-services";
-import { MARKETPLACES } from "@/lib/data-marketplaces";
-import { INSIGHT_POSTS } from "@/lib/data-content";
-
+import {
+  siteUrl,
+  services,
+  examples,
+  articles,
+  marketplaces,
+  slugify,
+} from "@/lib/content";
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
-  const routes: string[] = [
-    "/",
+  return [
+    "",
     "/services",
-    ...SERVICES.map((s) => `/services/${s.slug}`),
-    "/marketplaces",
-    ...MARKETPLACES.map((m) => `/marketplaces/${m.slug}`),
-    "/case-studies",
     "/about",
-    "/insights",
-    ...INSIGHT_POSTS.map((p) => `/insights/${p.slug}`),
+    "/pricing",
     "/contact",
     "/get-a-quote",
-    "/privacy",
-    "/terms",
-  ];
-  return routes.map((route) => ({
-    url: `${SITE_URL}${route}`,
-    lastModified: now,
-    changeFrequency: route === "/" ? "weekly" : "monthly",
-    priority: route === "/" ? 1 : route.split("/").length === 2 ? 0.8 : 0.6,
-  }));
+    "/case-studies",
+    "/insights",
+    "/marketplaces",
+    ...services.map((x) => `/services/${x.slug}`),
+    ...examples.map((x) => `/case-studies/${x.slug}`),
+    ...articles.map((x) => `/insights/${x.slug}`),
+    ...marketplaces.map((x) => `/marketplaces/${slugify(x)}`),
+  ].map((path) => ({ url: siteUrl + path }));
 }
