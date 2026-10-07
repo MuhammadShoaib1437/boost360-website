@@ -32,7 +32,7 @@ function Panel({
         <span
           className={
             isAfter
-              ? "inline-block rounded-full bg-growth/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-[#0d9b5c]"
+              ? "inline-block rounded-full bg-growth/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-[#22c15e]"
               : "inline-block rounded-full bg-slate-500/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-slate-500"
           }
         >
@@ -69,7 +69,7 @@ function Panel({
                   className={`mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full ${isAfter ? "bg-growth/20" : "bg-slate-400/25"}`}
                 >
                   {isAfter ? (
-                    <Icons.check className="h-3 w-3 text-[#0d9b5c]" />
+                    <Icons.check className="h-3 w-3 text-[#22c15e]" />
                   ) : (
                     <Icons.x className="h-3 w-3 text-slate-500" />
                   )}
@@ -164,16 +164,16 @@ export function BeforeAfter() {  const [pos, setPos] = useState(50);
           </ul>
         </div>
         <div className="rounded-2xl border border-ice/40 bg-mist p-6">
-          <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#0d9b5c]">
+          <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#22c15e]">
             After — optimized title
           </p>
           <p className="mt-3 text-[15px] font-medium leading-relaxed text-ink">
             “Dimmable LED Table Lamp with USB Charging Port — Modern Bedside Lamp for Bedroom &amp; Office”
           </p>
           <ul className="mt-4 space-y-2 text-[13.5px] text-ink">
-            <li className="flex gap-2"><span aria-hidden="true" className="text-[#0d9b5c]">✓</span> Keywords buyers actually search</li>
-            <li className="flex gap-2"><span aria-hidden="true" className="text-[#0d9b5c]">✓</span> Features that match marketplace filters</li>
-            <li className="flex gap-2"><span aria-hidden="true" className="text-[#0d9b5c]">✓</span> Full title space working for clicks</li>
+            <li className="flex gap-2"><span aria-hidden="true" className="text-[#22c15e]">✓</span> Keywords buyers actually search</li>
+            <li className="flex gap-2"><span aria-hidden="true" className="text-[#22c15e]">✓</span> Features that match marketplace filters</li>
+            <li className="flex gap-2"><span aria-hidden="true" className="text-[#22c15e]">✓</span> Full title space working for clicks</li>
           </ul>
         </div>
       </div>

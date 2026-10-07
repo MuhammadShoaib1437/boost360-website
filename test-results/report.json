@@ -1,0 +1,39 @@
+{
+  "routes": 29,
+  "widths": [
+    320,
+    375,
+    390,
+    700,
+    768,
+    900,
+    1024,
+    1150,
+    1280,
+    1440,
+    1920
+  ],
+  "errors": [],
+  "accessibility": [
+    {
+      "route": "/",
+      "violations": []
+    },
+    {
+      "route": "/pricing",
+      "violations": []
+    },
+    {
+      "route": "/about",
+      "violations": []
+    },
+    {
+      "route": "/contact",
+      "violations": []
+    },
+    {
+      "route": "/services/listing-optimization",
+      "violations": []
+    }
+  ]
+}

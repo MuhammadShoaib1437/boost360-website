@@ -110,7 +110,7 @@ export function HeroDashboard() {
           <div className="flex items-center gap-2">
             <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f57]" />
             <span className="h-2.5 w-2.5 rounded-full bg-[#febc2e]" />
-            <span className="h-2.5 w-2.5 rounded-full bg-[#28c840]" />
+            <span className="h-2.5 w-2.5 rounded-full bg-[#22c15e]" />
           </div>
           <p className="rounded-full bg-ice/10 px-3 py-1 text-[11px] font-semibold text-ice">
             Sample dashboard
@@ -145,7 +145,7 @@ export function HeroDashboard() {
               <linearGradient id="revLine" x1="0" y1="0" x2="1" y2="0">
                 <stop offset="0%" stopColor="#008cff" />
                 <stop offset="60%" stopColor="#00c8f8" />
-                <stop offset="100%" stopColor="#19e58c" />
+                <stop offset="100%" stopColor="#22c15e" />
               </linearGradient>
             </defs>
             {[30, 70, 110, 150].map((y) => (
@@ -165,7 +165,7 @@ export function HeroDashboard() {
               strokeDasharray="640"
               className="draw-line"
             />
-            <circle cx="560" cy="34" r="5" fill="#19e58c">
+            <circle cx="560" cy="34" r="5" fill="#22c15e">
               <animate attributeName="r" values="5;7;5" dur="2.4s" repeatCount="indefinite" />
             </circle>
           </svg>

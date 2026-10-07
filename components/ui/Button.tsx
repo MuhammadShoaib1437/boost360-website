@@ -12,7 +12,7 @@ const styles: Record<Variant, string> = {
   ghost:
     "border border-[rgba(15,70,130,0.18)] bg-white text-ink hover:border-electric/50 hover:text-brand hover:-translate-y-0.5",
   whatsapp:
-    "bg-[#22c15e] text-white shadow-[0_8px_30px_-6px_rgba(34,193,94,0.5)] hover:bg-[#1da851] hover:-translate-y-0.5",
+    "bg-[#22c15e] text-white shadow-[0_8px_30px_-6px_rgba(34,193,94,0.5)] hover:brightness-95 hover:-translate-y-0.5",
   light: "bg-white text-navy hover:-translate-y-0.5 hover:shadow-xl",
 };
 
@@ -34,7 +34,7 @@ export function Button({
   return (
     <a
       className={cn(
-        "group inline-flex items-center justify-center gap-2 rounded-xl font-semibold transition-all duration-300",
+        "group btn-sheen inline-flex items-center justify-center gap-2 rounded-xl font-semibold transition-all duration-300",
         size === "sm" && "px-4 py-2 text-sm",
         size === "md" && "px-6 py-3 text-[15px]",
         size === "lg" && "px-8 py-4 text-base",

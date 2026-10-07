@@ -21,7 +21,7 @@ export function WhatsAppFloat() {
       aria-label="Chat with Boost360Pro on WhatsApp"
       title="Chat with Boost360Pro"
       className={cn(
-        "group fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#22c15e] text-white shadow-[0_10px_35px_-5px_rgba(34,193,94,0.6)] transition-all duration-500 hover:scale-105 hover:bg-[#1da851] sm:bottom-6 sm:right-6",
+        "group fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#22c15e] text-white shadow-[0_10px_35px_-5px_rgba(34,193,94,0.6)] transition-all duration-500 hover:scale-105 hover:brightness-95 sm:bottom-6 sm:right-6",
         visible
           ? "translate-y-0 opacity-100"
           : "pointer-events-none translate-y-4 opacity-0",

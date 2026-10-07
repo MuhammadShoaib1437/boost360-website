@@ -210,7 +210,7 @@ export function BlogCard({ post, delay = 0 }: { post: InsightPost; delay?: numbe
   return (
     <Reveal delay={delay} className="h-full">
       <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-[rgba(15,70,130,0.12)] bg-white transition-all duration-300 hover:-translate-y-1.5 hover:border-electric/40 hover:shadow-[0_24px_55px_-24px_rgba(9,105,246,0.45)]">
-        <div className="relative flex h-40 items-center justify-center overflow-hidden bg-gradient-to-br from-navy via-[#0a2a5e] to-electric">
+        <div className="relative flex h-40 items-center justify-center overflow-hidden bg-gradient-to-br from-navy via-[#0b2a5e] to-electric">
           <div aria-hidden="true" className="absolute inset-0 bg-grid-dark opacity-70" />
           <div
             aria-hidden="true"

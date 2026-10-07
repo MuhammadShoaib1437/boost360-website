@@ -71,7 +71,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 transition-colors hover:text-white"
               >
-                <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#22c15e]/15 text-[#2bd96b]">
+                <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#22c15e]/15 text-[#22c15e]">
                   <Icons.whatsapp className="h-4.5 w-4.5" />
                 </span>
                 <span>
