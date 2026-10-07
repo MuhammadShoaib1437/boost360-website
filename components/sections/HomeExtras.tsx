@@ -47,8 +47,8 @@ export function Guarantees() {
           const Icon = Icons[g.icon];
           return (
             <Reveal key={g.title} delay={(i % 4) * 80} className="h-full">
-              <div className="group h-full rounded-2xl border border-[rgba(15,70,130,0.12)] bg-white p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-electric/40 hover:shadow-[0_24px_55px_-24px_rgba(9,105,246,0.45)]">
-                <span className={cn("flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6", CARD_ACCENTS[i % CARD_ACCENTS.length])}>
+              <div className="glow-card group h-full rounded-2xl border border-[rgba(15,70,130,0.12)] bg-white p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-electric/40 hover:shadow-[0_24px_55px_-24px_rgba(9,105,246,0.45)]">
+                <span className={cn("animate-hue-drift flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6", CARD_ACCENTS[i % CARD_ACCENTS.length])}>
                   <Icon className="h-5 w-5" />
                 </span>
                 <h3 className="mt-4 text-[16px] font-bold tracking-tight text-ink">
