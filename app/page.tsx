@@ -204,7 +204,14 @@ export default function Home() {
           <Reveal delay={120}>
             <div className="mt-9">
               <Marquee
-                items={["Amazon", "Walmart", "eBay", "Etsy", "Shopify", "TikTok Shop"]}
+                items={[
+                  { label: "Amazon", href: "/marketplaces/amazon" },
+                  { label: "Walmart", href: "/marketplaces/walmart" },
+                  { label: "eBay", href: "/marketplaces/ebay" },
+                  { label: "Etsy", href: "/marketplaces/etsy" },
+                  { label: "Shopify", href: "/marketplaces/shopify" },
+                  { label: "TikTok Shop", href: "/marketplaces/tiktok-shop" },
+                ]}
               />
             </div>
             <p className="mt-6 text-center text-[12.5px] text-muted/80">
