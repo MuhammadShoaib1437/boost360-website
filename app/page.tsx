@@ -9,7 +9,9 @@ import {
   MarketplaceCard,
   CaseStudyCard,
   BlogCard,
+  CARD_ACCENTS,
 } from "@/components/ui/Cards";
+import { cn } from "@/lib/utils";
 import { HeroDashboard } from "@/components/sections/HeroDashboard";
 import { Circle360 } from "@/components/sections/Circle360";
 import { BeforeAfter } from "@/components/sections/BeforeAfter";
@@ -213,7 +215,7 @@ export default function Home() {
         </Reveal>
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {SERVICES.map((s, i) => (
-            <ServiceCard key={s.slug} service={s} delay={(i % 4) * 80} />
+            <ServiceCard key={s.slug} service={s} delay={(i % 4) * 80} accent={i} />
           ))}
         </div>
       </Section>
@@ -250,7 +252,7 @@ export default function Home() {
             return (
               <Reveal key={w.title} delay={(i % 3) * 80} className="h-full">
                 <div className="group h-full rounded-2xl border border-[rgba(15,70,130,0.12)] bg-white p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-electric/40 hover:shadow-[0_24px_55px_-24px_rgba(9,105,246,0.45)]">
-                  <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-brand/10 to-ice/15 text-brand transition-transform duration-300 group-hover:scale-110">
+                  <span className={cn("flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6", CARD_ACCENTS[i % CARD_ACCENTS.length])}>
                     <Icon className="h-6 w-6" />
                   </span>
                   <h3 className="mt-5 text-lg font-bold tracking-tight text-ink">

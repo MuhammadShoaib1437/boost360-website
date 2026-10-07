@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import { Reveal } from "../ui/Reveal";
+import { STEP_GRADIENTS } from "../ui/Cards";
 
 export type Step = { title: string; desc: string };
 
@@ -45,7 +46,7 @@ export function ProcessTimeline({ steps }: { steps: Step[] }) {
         {steps.map((step, i) => (
           <li key={step.title} className="relative flex gap-6 sm:gap-8">
             <Reveal delay={(i % 3) * 80} className="flex w-full gap-6 sm:gap-8">
-              <div className="relative z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-brand to-electric text-lg font-extrabold text-white shadow-[0_10px_30px_-8px_rgba(9,105,246,0.6)] sm:h-16 sm:w-16">
+              <div className={cn("relative z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br text-lg font-extrabold text-white shadow-[0_10px_30px_-8px_rgba(9,105,246,0.6)] transition-transform duration-300 hover:scale-110 hover:-rotate-6 sm:h-16 sm:w-16", STEP_GRADIENTS[i % STEP_GRADIENTS.length])}>
                 {String(i + 1).padStart(2, "0")}
               </div>
               <div

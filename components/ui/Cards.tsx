@@ -6,6 +6,22 @@ import type { Marketplace } from "@/lib/data-marketplaces";
 import type { CaseStudy, InsightPost } from "@/lib/data-content";
 import { cn } from "@/lib/utils";
 
+/** Rotating colorful accents for icon badges (light tint bg + readable icon color). */
+export const CARD_ACCENTS = [
+  "from-brand/10 to-electric/15 text-brand",
+  "from-ice/10 to-ice/25 text-[#047a9e]",
+  "from-growth/10 to-growth/25 text-[#15803d]",
+  "from-amber-400/15 to-orange-500/25 text-[#b45309]",
+];
+
+/** Rotating gradients for step number badges (white text). */
+export const STEP_GRADIENTS = [
+  "from-brand to-electric",
+  "from-[#06b6d4] to-[#0284c7]",
+  "from-growth to-[#15803d]",
+  "from-amber-400 to-orange-500",
+];
+
 function CardShell({
   children,
   href,
@@ -33,6 +49,10 @@ function CardShell({
     >
       <div
         aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 top-0 h-1 origin-left scale-x-0 bg-gradient-to-r from-brand via-electric to-ice transition-transform duration-500 group-hover:scale-x-100"
+      />
+      <div
+        aria-hidden="true"
         className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
         style={{
           background: dark
@@ -45,15 +65,15 @@ function CardShell({
   );
 }
 
-function IconBadge({ icon, dark = false }: { icon: IconName; dark?: boolean }) {
+function IconBadge({ icon, dark = false, accent = 0 }: { icon: IconName; dark?: boolean; accent?: number }) {
   const Icon = Icons[icon];
   return (
     <span
       className={cn(
-        "flex h-12 w-12 items-center justify-center rounded-xl transition-transform duration-300 group-hover:scale-110",
+        "flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6",
         dark
-          ? "bg-gradient-to-br from-electric/25 to-ice/15 text-ice"
-          : "bg-gradient-to-br from-brand/10 to-ice/15 text-brand",
+          ? "from-electric/25 to-ice/15 text-ice"
+          : CARD_ACCENTS[accent % CARD_ACCENTS.length],
       )}
     >
       <Icon className="h-6 w-6" />
@@ -65,10 +85,12 @@ export function ServiceCard({
   service,
   dark = false,
   delay = 0,
+  accent = 0,
 }: {
   service: Service;
   dark?: boolean;
   delay?: number;
+  accent?: number;
 }) {
   return (
     <Reveal delay={delay} className="h-full">
@@ -77,7 +99,7 @@ export function ServiceCard({
         label={`${service.title} — learn more`}
         dark={dark}
       >
-        <IconBadge icon={service.icon as IconName} dark={dark} />
+        <IconBadge icon={service.icon as IconName} dark={dark} accent={accent} />
         <h3
           className={cn(
             "mt-5 text-lg font-bold tracking-tight",
