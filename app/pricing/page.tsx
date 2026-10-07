@@ -92,7 +92,7 @@ export default function PricingPage() {
           <div className="mx-auto mt-12 grid max-w-5xl gap-5 md:grid-cols-3">
             {ONE_TIME.map((s, i) => (
               <Reveal key={s.title} delay={i * 90} className="h-full">
-                <div className="flex h-full flex-col rounded-2xl border border-[rgba(255,59,71,0.12)] bg-white p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-electric/40 hover:shadow-[0_24px_55px_-24px_rgba(255,59,71,0.45)]">
+                <div className="flex h-full flex-col rounded-2xl border border-[rgba(15,70,130,0.12)] bg-white p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-electric/40 hover:shadow-[0_24px_55px_-24px_rgba(9,105,246,0.45)]">
                   <p className="text-[15px] font-extrabold uppercase tracking-wider text-brand">
                     {s.price}
                   </p>

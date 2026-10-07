@@ -35,7 +35,7 @@ export function Circle360() {
         />
         <div
           aria-hidden="true"
-          className="absolute inset-0 rounded-full bg-[radial-gradient(circle_at_center,rgba(255,90,46,0.16),transparent_62%)]"
+          className="absolute inset-0 rounded-full bg-[radial-gradient(circle_at_center,rgba(0,140,255,0.16),transparent_62%)]"
         />
 
         {/* nodes — orbit around the center, labels stay upright, click opens the service */}
@@ -52,7 +52,7 @@ export function Circle360() {
               >
                 <Link
                   href={node.href}
-                  className="block animate-spin-slower-reverse whitespace-nowrap rounded-full border border-ice/30 bg-midnight/90 px-5 py-2.5 text-sm font-semibold text-white shadow-[0_0_28px_-6px_rgba(255,138,30,0.55)] backdrop-blur-md transition-colors hover:border-ice/70 hover:text-ice"
+                  className="block animate-spin-slower-reverse whitespace-nowrap rounded-full border border-ice/30 bg-midnight/90 px-5 py-2.5 text-sm font-semibold text-white shadow-[0_0_28px_-6px_rgba(0,200,248,0.55)] backdrop-blur-md transition-colors hover:border-ice/70 hover:text-ice"
                 >
                   {node.label}
                 </Link>
@@ -62,7 +62,7 @@ export function Circle360() {
         </div>
 
         {/* center */}
-        <div className="absolute left-1/2 top-1/2 flex h-44 w-44 -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-full border border-ice/30 bg-navy shadow-[0_0_80px_-10px_rgba(255,138,30,0.6)] lg:h-52 lg:w-52">
+        <div className="absolute left-1/2 top-1/2 flex h-44 w-44 -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-full border border-ice/30 bg-navy shadow-[0_0_80px_-10px_rgba(0,200,248,0.6)] lg:h-52 lg:w-52">
           <span className="text-gradient text-5xl font-extrabold tracking-tight lg:text-6xl">
             360°
           </span>
@@ -74,7 +74,7 @@ export function Circle360() {
 
       {/* Mobile grid fallback */}
       <div className="sm:hidden">
-        <div className="mx-auto flex h-40 w-40 flex-col items-center justify-center rounded-full border border-ice/30 bg-navy shadow-[0_0_60px_-10px_rgba(255,138,30,0.6)]">
+        <div className="mx-auto flex h-40 w-40 flex-col items-center justify-center rounded-full border border-ice/30 bg-navy shadow-[0_0_60px_-10px_rgba(0,200,248,0.6)]">
           <span className="text-gradient text-4xl font-extrabold">360°</span>
           <span className="mt-1 text-[11px] font-medium uppercase tracking-[0.2em] text-slate-300">
             Full Coverage

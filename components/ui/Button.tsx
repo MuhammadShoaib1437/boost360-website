@@ -6,11 +6,11 @@ type Variant = "primary" | "secondary" | "ghost" | "whatsapp" | "light";
 
 const styles: Record<Variant, string> = {
   primary:
-    "bg-gradient-to-r from-brand via-electric to-ice text-white shadow-[0_8px_30px_-6px_rgba(255,90,46,0.55)] hover:shadow-[0_12px_40px_-6px_rgba(255,90,46,0.7)] hover:-translate-y-0.5",
+    "bg-gradient-to-r from-brand via-electric to-ice text-white shadow-[0_8px_30px_-6px_rgba(0,140,255,0.55)] hover:shadow-[0_12px_40px_-6px_rgba(0,140,255,0.7)] hover:-translate-y-0.5",
   secondary:
     "border border-white/25 bg-white/5 text-white backdrop-blur-sm hover:border-ice/60 hover:bg-white/10 hover:-translate-y-0.5",
   ghost:
-    "border border-[rgba(255,59,71,0.18)] bg-white text-ink hover:border-electric/50 hover:text-brand hover:-translate-y-0.5",
+    "border border-[rgba(15,70,130,0.18)] bg-white text-ink hover:border-electric/50 hover:text-brand hover:-translate-y-0.5",
   whatsapp:
     "bg-[#22c15e] text-white shadow-[0_8px_30px_-6px_rgba(34,193,94,0.5)] hover:brightness-95 hover:-translate-y-0.5",
   light: "bg-white text-navy hover:-translate-y-0.5 hover:shadow-xl",

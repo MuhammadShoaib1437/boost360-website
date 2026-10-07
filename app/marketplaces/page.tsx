@@ -166,7 +166,7 @@ export default function MarketplacesPage() {
             const Icon = Icons[point.icon];
             return (
               <Reveal key={point.title} delay={i * 0.08} className="h-full">
-                <div className="flex h-full flex-col rounded-2xl border border-[rgba(255,59,71,0.12)] bg-white p-6 sm:p-7">
+                <div className="flex h-full flex-col rounded-2xl border border-[rgba(15,70,130,0.12)] bg-white p-6 sm:p-7">
                   <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-brand/10 to-ice/15 text-brand">
                     <Icon className="h-6 w-6" />
                   </span>

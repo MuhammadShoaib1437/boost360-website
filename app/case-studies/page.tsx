@@ -84,8 +84,8 @@ export default function CaseStudiesPage() {
         <div className="mt-12 space-y-10">
           {CASE_STUDIES.map((study) => (
             <Reveal key={study.slug} delay={0}>
-              <article className="overflow-hidden rounded-3xl border border-[rgba(255,59,71,0.12)] bg-white shadow-[0_20px_60px_-30px_rgba(255,59,71,0.3)]">
-                <div className="bg-gradient-to-br from-navy via-midnight to-[#101019] p-6 sm:p-8">
+              <article className="overflow-hidden rounded-3xl border border-[rgba(15,70,130,0.12)] bg-white shadow-[0_20px_60px_-30px_rgba(9,105,246,0.3)]">
+                <div className="bg-gradient-to-br from-navy via-midnight to-[#0b2a5e] p-6 sm:p-8">
                   <div className="flex flex-wrap items-center gap-3">
                     <span className="inline-flex items-center rounded-full bg-ice/15 px-4 py-1.5 text-[12px] font-bold uppercase tracking-[0.14em] text-ice">
                       {study.category}
@@ -109,7 +109,7 @@ export default function CaseStudiesPage() {
                     </p>
                   </div>
                   <div className="mt-6 grid gap-6 md:grid-cols-2">
-                    <div className="rounded-2xl border border-[rgba(255,59,71,0.12)] p-6">
+                    <div className="rounded-2xl border border-[rgba(15,70,130,0.12)] p-6">
                       <h4 className="text-base font-bold tracking-tight text-ink">
                         Key challenges
                       </h4>
@@ -125,7 +125,7 @@ export default function CaseStudiesPage() {
                         ))}
                       </ul>
                     </div>
-                    <div className="rounded-2xl border border-[rgba(255,59,71,0.12)] p-6">
+                    <div className="rounded-2xl border border-[rgba(15,70,130,0.12)] p-6">
                       <h4 className="text-base font-bold tracking-tight text-ink">
                         Our approach
                       </h4>

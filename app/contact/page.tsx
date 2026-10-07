@@ -55,7 +55,7 @@ export default function ContactPage() {
         <Container>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             <Reveal>
-              <div className="flex h-full flex-col rounded-3xl border border-[rgba(255,59,71,0.12)] bg-white p-8 shadow-[0_20px_60px_-30px_rgba(255,59,71,0.3)] transition-all duration-300 hover:-translate-y-1 hover:border-electric/40">
+              <div className="flex h-full flex-col rounded-3xl border border-[rgba(15,70,130,0.12)] bg-white p-8 shadow-[0_20px_60px_-30px_rgba(9,105,246,0.3)] transition-all duration-300 hover:-translate-y-1 hover:border-electric/40">
                 <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#22c15e]/10 text-[#22c15e]">
                   <Icons.whatsapp className="h-7 w-7" />
                 </span>
@@ -85,7 +85,7 @@ export default function ContactPage() {
               </div>
             </Reveal>
             <Reveal delay={120}>
-              <div className="flex h-full flex-col rounded-3xl border border-[rgba(255,59,71,0.12)] bg-white p-8 shadow-[0_20px_60px_-30px_rgba(255,59,71,0.3)] transition-all duration-300 hover:-translate-y-1 hover:border-electric/40">
+              <div className="flex h-full flex-col rounded-3xl border border-[rgba(15,70,130,0.12)] bg-white p-8 shadow-[0_20px_60px_-30px_rgba(9,105,246,0.3)] transition-all duration-300 hover:-translate-y-1 hover:border-electric/40">
                 <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-brand/10 text-brand">
                   <Icons.mail className="h-7 w-7" />
                 </span>
@@ -113,7 +113,7 @@ export default function ContactPage() {
               </div>
             </Reveal>
             <Reveal delay={240}>
-              <div className="flex h-full flex-col rounded-3xl border border-[rgba(255,59,71,0.12)] bg-white p-8 shadow-[0_20px_60px_-30px_rgba(255,59,71,0.3)] transition-all duration-300 hover:-translate-y-1 hover:border-electric/40">
+              <div className="flex h-full flex-col rounded-3xl border border-[rgba(15,70,130,0.12)] bg-white p-8 shadow-[0_20px_60px_-30px_rgba(9,105,246,0.3)] transition-all duration-300 hover:-translate-y-1 hover:border-electric/40">
                 <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-brand/10 to-ice/15 text-brand">
                   <Icons.spark className="h-7 w-7" />
                 </span>
@@ -150,7 +150,7 @@ export default function ContactPage() {
       <Section>
         <div className="grid gap-10 lg:grid-cols-5">
           <Reveal className="lg:col-span-3">
-            <div className="rounded-3xl border border-[rgba(255,59,71,0.12)] bg-white p-7 shadow-[0_20px_60px_-30px_rgba(255,59,71,0.3)] sm:p-10">
+            <div className="rounded-3xl border border-[rgba(15,70,130,0.12)] bg-white p-7 shadow-[0_20px_60px_-30px_rgba(9,105,246,0.3)] sm:p-10">
               <SectionHeading
                 align="left"
                 eyebrow="Send a Message"
@@ -177,7 +177,7 @@ export default function ContactPage() {
                   online, we can help.
                 </p>
               </div>
-              <div className="rounded-3xl border border-[rgba(255,59,71,0.12)] bg-mist p-8">
+              <div className="rounded-3xl border border-[rgba(15,70,130,0.12)] bg-mist p-8">
                 <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-brand/10 to-ice/15 text-brand">
                   <Icons.spark className="h-6 w-6" />
                 </span>

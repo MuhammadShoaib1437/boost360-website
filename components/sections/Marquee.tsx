@@ -15,7 +15,7 @@ export function Marquee({ items }: { items: string[] }) {
           <span
             key={`${item}-${i}`}
             aria-hidden={i >= items.length}
-            className="flex items-center gap-3 whitespace-nowrap rounded-2xl border border-[rgba(255,59,71,0.12)] bg-mist px-7 py-4 text-lg font-bold tracking-tight text-ink"
+            className="flex items-center gap-3 whitespace-nowrap rounded-2xl border border-[rgba(15,70,130,0.12)] bg-mist px-7 py-4 text-lg font-bold tracking-tight text-ink"
           >
             <span className="h-2 w-2 rounded-full bg-gradient-to-r from-electric to-growth" />
             {item}
