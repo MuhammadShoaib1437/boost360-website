@@ -214,3 +214,29 @@ body {
   pointer-events: none;
 }
 .btn-sheen:hover::after { left: 135%; }
+
+/* Slow aurora drift for hero glow blobs */
+@keyframes aurora-drift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(70px, -45px) scale(1.18); }
+  66% { transform: translate(-50px, 35px) scale(0.94); }
+}
+.animate-aurora { animation: aurora-drift 16s ease-in-out infinite; }
+.animate-aurora-2 { animation: aurora-drift 20s ease-in-out -6s infinite reverse; }
+.animate-aurora-3 { animation: aurora-drift 24s ease-in-out -12s infinite; }
+
+/* Subtle film grain — premium texture over everything */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.032;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-aurora, .animate-aurora-2, .animate-aurora-3 { animation: none; }
+  body::after { display: none; }
+}

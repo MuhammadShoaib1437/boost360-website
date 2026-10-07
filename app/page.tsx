@@ -121,9 +121,9 @@ export default function Home() {
       <section className="relative overflow-hidden bg-abyss">
         <div aria-hidden="true" className="pointer-events-none absolute inset-0">
           <div className="absolute inset-0 bg-grid-dark" />
-          <div className="absolute -top-40 left-1/2 h-[480px] w-[820px] -translate-x-1/2 rounded-full bg-electric/15 blur-[140px]" />
-          <div className="absolute -left-32 top-1/3 h-[340px] w-[340px] rounded-full bg-ice/10 blur-[120px]" />
-          <div className="absolute -right-24 bottom-0 h-[300px] w-[300px] rounded-full bg-growth/10 blur-[120px]" />
+          <div className="animate-aurora absolute -top-40 left-1/2 h-[480px] w-[820px] -translate-x-1/2 rounded-full bg-electric/15 blur-[140px]" />
+          <div className="animate-aurora-2 absolute -left-32 top-1/3 h-[340px] w-[340px] rounded-full bg-ice/10 blur-[120px]" />
+          <div className="animate-aurora-3 absolute -right-24 bottom-0 h-[300px] w-[300px] rounded-full bg-growth/10 blur-[120px]" />
         </div>
 
         <Container className="relative pb-20 pt-14 sm:pb-24 sm:pt-20 lg:pb-28">
@@ -131,8 +131,19 @@ export default function Home() {
             <div className="animate-fade-up">
               <Badge dark>360° E-Commerce Management &amp; Growth</Badge>
               <h1 className="mt-6 text-4xl font-extrabold leading-[1.06] tracking-tight text-white sm:text-5xl lg:text-[60px]">
-                More Sales on Every Marketplace{" "}
-                <span className="text-gradient">That Matters</span>.
+                {["More", "Sales", "on", "Every", "Marketplace"].map((w, i) => (
+                  <span
+                    key={w}
+                    className="inline-block animate-fade-up"
+                    style={{ animationDelay: `${i * 90}ms`, marginRight: "0.26em" }}
+                  >
+                    {w}
+                  </span>
+                ))}
+                <span className="text-gradient inline-block animate-fade-up" style={{ animationDelay: "480ms" }}>
+                  That Matters
+                </span>
+                .
               </h1>
               <p className="mt-6 max-w-xl text-base leading-relaxed text-slate-300 sm:text-lg">
                 Boost360Pro is your complete e-commerce growth team — from your

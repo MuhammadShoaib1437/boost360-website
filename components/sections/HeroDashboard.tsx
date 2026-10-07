@@ -33,30 +33,59 @@ function useInView<T extends HTMLElement>(threshold = 0.2) {
 }
 const CHIPS = ["Amazon", "Walmart", "eBay", "Etsy", "Shopify", "TikTok Shop"];
 
+/** Eased count-up; respects prefers-reduced-motion. */
+function useCountUp(target: number, start: boolean, duration = 1700) {
+  const [val, setVal] = useState(0);
+  useEffect(() => {
+    if (!start) return;
+    if (typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setVal(target);
+      return;
+    }
+    let raf = 0;
+    const t0 = performance.now();
+    const tick = (t: number) => {
+      const p = Math.min(1, (t - t0) / duration);
+      setVal(target * (1 - Math.pow(1 - p, 3)));
+      if (p < 1) raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, [start, target, duration]);
+  return val;
+}
+
 const KPIS = [
-  { label: "Total Sales", value: "$48,290", delta: "+12.4%", icon: "cart" },
-  { label: "Orders", value: "1,284", delta: "+8.1%", icon: "layers" },
-  { label: "Conversion Rate", value: "3.42%", delta: "+0.6%", icon: "chart" },
-  { label: "Store Health", value: "98/100", delta: "Excellent", icon: "shield" },
+  { label: "Total Sales", value: "$48,290", countTo: 48290, format: (n: number) => `$${Math.round(n).toLocaleString("en-US")}`, delta: "+12.4%", icon: "cart" },
+  { label: "Orders", value: "1,284", countTo: 1284, format: (n: number) => Math.round(n).toLocaleString("en-US"), delta: "+8.1%", icon: "layers" },
+  { label: "Conversion Rate", value: "3.42%", countTo: 3.42, format: (n: number) => `${n.toFixed(2)}%`, delta: "+0.6%", icon: "chart" },
+  { label: "Store Health", value: "98/100", countTo: 98, format: (n: number) => `${Math.round(n)}/100`, delta: "Excellent", icon: "shield" },
 ] as const;
 
 function KpiCard({
   label,
   value,
+  countTo,
+  format,
   delta,
   icon,
+  start,
   className = "",
 }: {
   label: string;
   value: string;
+  countTo: number;
+  format: (n: number) => string;
   delta: string;
   icon: keyof typeof Icons;
+  start: boolean;
   className?: string;
 }) {
   const Icon = Icons[icon];
+  const animated = useCountUp(countTo, start);
   return (
     <div
-      className={`rounded-2xl border border-white/10 bg-white/[0.04] p-4 backdrop-blur-sm ${className}`}
+      className={`rounded-2xl border border-white/10 bg-white/[0.04] p-4 backdrop-blur-sm transition-all duration-300 hover:border-ice/30 hover:bg-white/[0.07] ${className}`}
     >
       <div className="flex items-center justify-between">
         <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-slate-400">
@@ -64,8 +93,8 @@ function KpiCard({
         </p>
         <Icon className="h-4 w-4 text-ice/70" />
       </div>
-      <p className="mt-2 text-2xl font-extrabold tracking-tight text-white">
-        {value}
+      <p className="mt-2 text-2xl font-extrabold tabular-nums tracking-tight text-white">
+        {start ? format(animated) : value}
       </p>
       <p className="mt-1 inline-flex items-center gap-1 text-[12px] font-semibold text-growth">
         <svg viewBox="0 0 24 24" className="h-3 w-3" fill="currentColor" aria-hidden="true">
@@ -79,6 +108,11 @@ function KpiCard({
 
 export function HeroDashboard() {
   const chart = useInView<HTMLDivElement>(0.2);
+  const [countStarted, setCountStarted] = useState(false);
+  useEffect(() => {
+    const t = setTimeout(() => setCountStarted(true), 600);
+    return () => clearTimeout(t);
+  }, []);
   return (
     <div className="relative" aria-hidden="true">
       {/* glow */}
@@ -119,7 +153,7 @@ export function HeroDashboard() {
 
         <div className="mt-5 grid grid-cols-2 gap-3 lg:grid-cols-4">
           {KPIS.map((k) => (
-            <KpiCard key={k.label} {...k} />
+            <KpiCard key={k.label} {...k} start={countStarted} />
           ))}
         </div>
 

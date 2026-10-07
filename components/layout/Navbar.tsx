@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -90,6 +90,15 @@ export function Navbar() {
 
   const [lastPathname, setLastPathname] = useState(pathname);
 
+  // Intensify the header once the user scrolls.
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   // Close the mobile menu whenever the route changes (React's sanctioned
   // "adjust state during render" pattern for derived state).
   if (lastPathname !== pathname) {
@@ -110,7 +119,7 @@ export function Navbar() {
 
   return (
     <>
-      <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-200/70 bg-white/90 py-2 shadow-lg backdrop-blur-xl">
+      <header className={cn("fixed inset-x-0 top-0 z-50 border-b border-slate-200/70 bg-white/90 backdrop-blur-xl transition-all duration-300", scrolled ? "py-1 shadow-[0_10px_40px_-12px_rgba(9,105,246,0.25)]" : "py-2 shadow-lg")}>
         <nav
           aria-label="Main navigation"
           className="mx-auto flex w-full max-w-7xl items-center justify-between pl-2 pr-5 sm:pl-3 sm:pr-8 lg:pl-4 lg:pr-10"
