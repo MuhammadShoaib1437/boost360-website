@@ -150,7 +150,7 @@ export function BeforeAfter() {  const [pos, setPos] = useState(50);
 
       {/* Concrete title transformation example */}
       <div className="mx-auto mt-8 grid max-w-4xl gap-4 sm:grid-cols-2">
-        <div className="rounded-2xl border border-slate-200 bg-white p-6">
+        <div className="group rounded-2xl border-2 border-dashed border-slate-300 bg-slate-50/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:bg-slate-50 hover:shadow-[0_20px_45px_-24px_rgba(100,116,139,0.5)]">
           <p className="text-xs font-bold uppercase tracking-[0.14em] text-slate-400">
             Before — typical weak title
           </p>
@@ -158,22 +158,22 @@ export function BeforeAfter() {  const [pos, setPos] = useState(50);
             “nice lamp for home decoration gift”
           </p>
           <ul className="mt-4 space-y-2 text-[13.5px] text-slate-500">
-            <li className="flex gap-2"><span aria-hidden="true">✕</span> No searchable keywords</li>
-            <li className="flex gap-2"><span aria-hidden="true">✕</span> No features buyers filter for</li>
-            <li className="flex gap-2"><span aria-hidden="true">✕</span> Wastes 60+ characters of title space</li>
+            <li className="flex gap-2 transition-transform duration-300 hover:translate-x-1"><span aria-hidden="true" className="font-bold text-red-400 transition-transform duration-300 group-hover:scale-125">✕</span> No searchable keywords</li>
+            <li className="flex gap-2 transition-transform duration-300 hover:translate-x-1"><span aria-hidden="true" className="font-bold text-red-400 transition-transform duration-300 group-hover:scale-125">✕</span> No features buyers filter for</li>
+            <li className="flex gap-2 transition-transform duration-300 hover:translate-x-1"><span aria-hidden="true" className="font-bold text-red-400 transition-transform duration-300 group-hover:scale-125">✕</span> Wastes 60+ characters of title space</li>
           </ul>
         </div>
-        <div className="rounded-2xl border border-ice/40 bg-mist p-6">
-          <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#22c15e]">
+        <div className="glow-card group rounded-2xl border border-ice/40 bg-gradient-to-br from-white via-white to-mist p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_24px_55px_-24px_rgba(9,105,246,0.5)]">
+          <p className="inline-block rounded-full bg-growth/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-[#22c15e]">
             After — optimized title
           </p>
           <p className="mt-3 text-[15px] font-medium leading-relaxed text-ink">
             “Dimmable LED Table Lamp with USB Charging Port — Modern Bedside Lamp for Bedroom &amp; Office”
           </p>
-          <ul className="mt-4 space-y-2 text-[13.5px] text-ink">
-            <li className="flex gap-2"><span aria-hidden="true" className="text-[#22c15e]">✓</span> Keywords buyers actually search</li>
-            <li className="flex gap-2"><span aria-hidden="true" className="text-[#22c15e]">✓</span> Features that match marketplace filters</li>
-            <li className="flex gap-2"><span aria-hidden="true" className="text-[#22c15e]">✓</span> Full title space working for clicks</li>
+          <ul className="mt-4 space-y-2 text-[13.5px] font-medium text-ink">
+            <li className="flex gap-2 transition-transform duration-300 hover:translate-x-1"><span aria-hidden="true" className="font-bold text-[#22c15e] transition-transform duration-300 group-hover:scale-125">✓</span> Keywords buyers actually search</li>
+            <li className="flex gap-2 transition-transform duration-300 hover:translate-x-1"><span aria-hidden="true" className="font-bold text-[#22c15e] transition-transform duration-300 group-hover:scale-125">✓</span> Features that match marketplace filters</li>
+            <li className="flex gap-2 transition-transform duration-300 hover:translate-x-1"><span aria-hidden="true" className="font-bold text-[#22c15e] transition-transform duration-300 group-hover:scale-125">✓</span> Full title space working for clicks</li>
           </ul>
         </div>
       </div>

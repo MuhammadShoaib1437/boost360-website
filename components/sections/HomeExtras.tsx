@@ -170,14 +170,17 @@ export function ComparisonTable() {
         />
       </Reveal>
       <Reveal delay={100}>
-        <div className="mx-auto mt-12 max-w-5xl overflow-x-auto rounded-2xl border border-[rgba(15,70,130,0.12)] bg-white shadow-sm">
+        <div className="mx-auto mt-12 max-w-5xl overflow-x-auto rounded-2xl border border-[rgba(15,70,130,0.12)] bg-white shadow-[0_24px_60px_-30px_rgba(9,105,246,0.35)] transition-shadow duration-300 hover:shadow-[0_30px_70px_-28px_rgba(9,105,246,0.5)]">
           <table className="w-full min-w-[640px] border-collapse text-left">
             <thead>
               <tr className="border-b border-[rgba(15,70,130,0.12)]">
                 <th className="px-6 py-4 text-sm font-semibold text-muted">
                   <span className="sr-only">Factor</span>
                 </th>
-                <th className="bg-brand/5 px-6 py-4 text-[15px] font-extrabold text-brand">
+                <th className="bg-gradient-to-br from-brand via-electric to-ice px-6 py-4 text-[15px] font-extrabold text-white">
+                  <span className="mr-2 inline-block rounded-full bg-white/25 px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wider">
+                    Our edge
+                  </span>
                   Boost360Pro
                 </th>
                 <th className="px-6 py-4 text-[15px] font-bold text-ink">
@@ -193,6 +196,7 @@ export function ComparisonTable() {
                 <tr
                   key={r.label}
                   className={cn(
+                    "group transition-colors duration-200 hover:bg-mist/70",
                     i !== COMPARISON_ROWS.length - 1 &&
                       "border-b border-[rgba(15,70,130,0.08)]",
                   )}
@@ -200,8 +204,8 @@ export function ComparisonTable() {
                   <td className="px-6 py-4 text-sm font-semibold text-ink">
                     {r.label}
                   </td>
-                  <td className="bg-brand/5 px-6 py-4 text-sm text-ink">
-                    <span className="mr-2 inline-flex h-5 w-5 items-center justify-center rounded-full bg-brand/15 align-middle text-brand">
+                  <td className="bg-gradient-to-b from-brand/[0.08] to-electric/[0.04] px-6 py-4 text-sm font-medium text-ink">
+                    <span className="mr-2 inline-flex h-5 w-5 items-center justify-center rounded-full bg-gradient-to-br from-brand to-electric align-middle text-white transition-transform duration-300 group-hover:scale-125">
                       <Icons.check className="h-3 w-3" />
                     </span>
                     {r.us}
