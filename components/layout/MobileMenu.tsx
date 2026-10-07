@@ -80,7 +80,7 @@ export function MobileMenu({
             alt="Boost360Pro"
             width={2107}
             height={643}
-            className="h-10 w-auto drop-shadow-[0_0_16px_rgba(90,160,255,0.45)]"
+            className="h-10 w-auto drop-shadow-[0_0_16px_rgba(255,107,107,0.45)]"
           />
           <button
             type="button"

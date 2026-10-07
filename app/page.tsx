@@ -176,7 +176,7 @@ export default function Home() {
       </section>
 
       {/* ============ MARKETPLACE TRUST STRIP ============ */}
-      <section className="border-b border-[rgba(15,70,130,0.1)] bg-white py-14 sm:py-16">
+      <section className="border-b border-[rgba(255,59,71,0.1)] bg-white py-14 sm:py-16">
         <Container>
           <Reveal>
             <div className="text-center">
@@ -249,7 +249,7 @@ export default function Home() {
             const Icon = Icons[w.icon];
             return (
               <Reveal key={w.title} delay={(i % 3) * 80} className="h-full">
-                <div className="group h-full rounded-2xl border border-[rgba(15,70,130,0.12)] bg-white p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-electric/40 hover:shadow-[0_24px_55px_-24px_rgba(9,105,246,0.45)]">
+                <div className="group h-full rounded-2xl border border-[rgba(255,59,71,0.12)] bg-white p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-electric/40 hover:shadow-[0_24px_55px_-24px_rgba(255,59,71,0.45)]">
                   <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-brand/10 to-ice/15 text-brand transition-transform duration-300 group-hover:scale-110">
                     <Icon className="h-6 w-6" />
                   </span>

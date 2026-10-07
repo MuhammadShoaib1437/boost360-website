@@ -61,7 +61,7 @@ export default function GetAQuotePage() {
         <div className="grid gap-8 lg:grid-cols-3">
           {/* Form */}
           <Reveal className="lg:col-span-2">
-            <div className="rounded-3xl border border-[rgba(15,70,130,0.12)] bg-white p-6 shadow-[0_20px_60px_-30px_rgba(9,105,246,0.3)] sm:p-10">
+            <div className="rounded-3xl border border-[rgba(255,59,71,0.12)] bg-white p-6 shadow-[0_20px_60px_-30px_rgba(255,59,71,0.3)] sm:p-10">
               <SectionHeading
                 align="left"
                 eyebrow="Tell Us About Your Store"
@@ -97,7 +97,7 @@ export default function GetAQuotePage() {
                   ))}
                 </ol>
               </div>
-              <div className="rounded-3xl border border-[rgba(15,70,130,0.12)] bg-mist p-7 sm:p-8">
+              <div className="rounded-3xl border border-[rgba(255,59,71,0.12)] bg-mist p-7 sm:p-8">
                 <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#22c15e]/10 text-[#22c15e]">
                   <Icons.whatsapp className="h-6 w-6" />
                 </span>

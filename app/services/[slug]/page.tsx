@@ -181,7 +181,7 @@ export default async function ServicePage({
         <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2">
           {service.challenges.map((challenge, i) => (
             <Reveal key={challenge} delay={(i % 2) * 80}>
-              <div className="flex h-full items-start gap-4 rounded-2xl border border-[rgba(15,70,130,0.12)] bg-white p-5 sm:p-6">
+              <div className="flex h-full items-start gap-4 rounded-2xl border border-[rgba(255,59,71,0.12)] bg-white p-5 sm:p-6">
                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-rose-500/10 text-rose-600">
                   <Icons.x className="h-4 w-4" />
                 </span>
@@ -202,7 +202,7 @@ export default async function ServicePage({
         <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {service.included.map((item, i) => (
             <Reveal key={item} delay={(i % 3) * 80}>
-              <div className="flex h-full items-start gap-4 rounded-2xl border border-[rgba(15,70,130,0.12)] bg-white p-5 sm:p-6">
+              <div className="flex h-full items-start gap-4 rounded-2xl border border-[rgba(255,59,71,0.12)] bg-white p-5 sm:p-6">
                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-growth/10 text-growth">
                   <Icons.check className="h-4 w-4" />
                 </span>
@@ -239,7 +239,7 @@ export default async function ServicePage({
             <Link
               key={marketplace.href}
               href={marketplace.href}
-              className="group inline-flex items-center gap-2 rounded-full border border-[rgba(15,70,130,0.18)] bg-white px-5 py-2.5 text-[15px] font-semibold text-ink transition-all duration-300 hover:-translate-y-0.5 hover:border-electric/50 hover:text-brand"
+              className="group inline-flex items-center gap-2 rounded-full border border-[rgba(255,59,71,0.18)] bg-white px-5 py-2.5 text-[15px] font-semibold text-ink transition-all duration-300 hover:-translate-y-0.5 hover:border-electric/50 hover:text-brand"
             >
               {marketplace.label}
               <Icons.arrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" />

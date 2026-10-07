@@ -117,7 +117,7 @@ export default async function MarketplaceDetailPage({
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {m.services.map((s, i) => (
             <Reveal key={s.title} delay={(i % 3) * 0.08} className="h-full">
-              <div className="flex h-full flex-col rounded-2xl border border-[rgba(15,70,130,0.12)] bg-white p-6 sm:p-7">
+              <div className="flex h-full flex-col rounded-2xl border border-[rgba(255,59,71,0.12)] bg-white p-6 sm:p-7">
                 <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-brand/10 to-ice/15 text-brand">
                   <Icons.check className="h-6 w-6" />
                 </span>
@@ -146,7 +146,7 @@ export default async function MarketplaceDetailPage({
           <ul className="mx-auto mt-12 grid max-w-4xl gap-4 sm:grid-cols-2">
             {m.challenges.map((c, i) => (
               <Reveal key={c} delay={(i % 2) * 0.08}>
-                <li className="flex items-start gap-3.5 rounded-xl border border-[rgba(15,70,130,0.12)] bg-white p-5">
+                <li className="flex items-start gap-3.5 rounded-xl border border-[rgba(255,59,71,0.12)] bg-white p-5">
                   <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-red-500/10 text-red-500">
                     <Icons.x className="h-4 w-4" />
                   </span>
@@ -235,8 +235,8 @@ export default async function MarketplaceDetailPage({
                   href={`/services/${svc.slug}`}
                   aria-label={`${svc.title} — learn more`}
                   className={cn(
-                    "group flex h-full flex-col rounded-2xl border border-[rgba(15,70,130,0.12)] bg-white p-6 transition-all duration-300",
-                    "hover:-translate-y-1.5 hover:border-electric/40 hover:shadow-[0_24px_55px_-24px_rgba(9,105,246,0.45)] sm:p-7",
+                    "group flex h-full flex-col rounded-2xl border border-[rgba(255,59,71,0.12)] bg-white p-6 transition-all duration-300",
+                    "hover:-translate-y-1.5 hover:border-electric/40 hover:shadow-[0_24px_55px_-24px_rgba(255,59,71,0.45)] sm:p-7",
                   )}
                 >
                   <h3 className="text-lg font-bold tracking-tight text-ink">

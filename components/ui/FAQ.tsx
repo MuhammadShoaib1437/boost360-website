@@ -14,7 +14,7 @@ export function FAQ({
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <div className="divide-y divide-[rgba(15,70,130,0.1)]">
+    <div className="divide-y divide-[rgba(255,59,71,0.1)]">
       {items.map((item, i) => {
         const isOpen = open === i;
         return (
@@ -32,7 +32,7 @@ export function FAQ({
               <span
                 className={cn(
                   "flex h-8 w-8 shrink-0 items-center justify-center rounded-full border transition-transform duration-300",
-                  dark ? "border-white/20" : "border-[rgba(15,70,130,0.15)]",
+                  dark ? "border-white/20" : "border-[rgba(255,59,71,0.15)]",
                   isOpen && "rotate-180 bg-ice/10 border-ice/40",
                 )}
               >

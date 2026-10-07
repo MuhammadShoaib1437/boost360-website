@@ -27,7 +27,7 @@ function CardShell({
         "group relative flex h-full flex-col overflow-hidden rounded-2xl border p-6 transition-all duration-300 hover:-translate-y-1.5 sm:p-7",
         dark
           ? "border-white/10 bg-white/[0.04] hover:border-ice/40 hover:bg-white/[0.06]"
-          : "border-[rgba(15,70,130,0.12)] bg-white hover:border-electric/40 hover:shadow-[0_24px_55px_-24px_rgba(9,105,246,0.45)]",
+          : "border-[rgba(255,59,71,0.12)] bg-white hover:border-electric/40 hover:shadow-[0_24px_55px_-24px_rgba(255,59,71,0.45)]",
         className,
       )}
     >
@@ -36,8 +36,8 @@ function CardShell({
         className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
         style={{
           background: dark
-            ? "radial-gradient(420px circle at 50% 0%, rgba(0,200,248,0.12), transparent 70%)"
-            : "radial-gradient(420px circle at 50% 0%, rgba(0,140,255,0.08), transparent 70%)",
+            ? "radial-gradient(420px circle at 50% 0%, rgba(255,138,30,0.12), transparent 70%)"
+            : "radial-gradient(420px circle at 50% 0%, rgba(255,90,46,0.08), transparent 70%)",
         }}
       />
       {children}
@@ -167,8 +167,8 @@ export function CaseStudyCard({
 }) {
   return (
     <Reveal delay={delay} className="h-full">
-      <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-[rgba(15,70,130,0.12)] bg-white transition-all duration-300 hover:-translate-y-1.5 hover:border-electric/40 hover:shadow-[0_24px_55px_-24px_rgba(9,105,246,0.45)]">
-        <div className="relative bg-gradient-to-br from-navy via-midnight to-[#0b2a5e] p-6">
+      <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-[rgba(255,59,71,0.12)] bg-white transition-all duration-300 hover:-translate-y-1.5 hover:border-electric/40 hover:shadow-[0_24px_55px_-24px_rgba(255,59,71,0.45)]">
+        <div className="relative bg-gradient-to-br from-navy via-midnight to-[#101019] p-6">
           <div
             aria-hidden="true"
             className="absolute inset-0 bg-grid-dark opacity-60"
@@ -209,8 +209,8 @@ export function CaseStudyCard({
 export function BlogCard({ post, delay = 0 }: { post: InsightPost; delay?: number }) {
   return (
     <Reveal delay={delay} className="h-full">
-      <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-[rgba(15,70,130,0.12)] bg-white transition-all duration-300 hover:-translate-y-1.5 hover:border-electric/40 hover:shadow-[0_24px_55px_-24px_rgba(9,105,246,0.45)]">
-        <div className="relative flex h-40 items-center justify-center overflow-hidden bg-gradient-to-br from-navy via-[#0b2a5e] to-electric">
+      <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-[rgba(255,59,71,0.12)] bg-white transition-all duration-300 hover:-translate-y-1.5 hover:border-electric/40 hover:shadow-[0_24px_55px_-24px_rgba(255,59,71,0.45)]">
+        <div className="relative flex h-40 items-center justify-center overflow-hidden bg-gradient-to-br from-navy via-[#101019] to-electric">
           <div aria-hidden="true" className="absolute inset-0 bg-grid-dark opacity-70" />
           <div
             aria-hidden="true"

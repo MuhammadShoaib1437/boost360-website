@@ -96,7 +96,7 @@ export default async function InsightPostPage({
           <Reveal delay={80}>
             <nav
               aria-label="Table of contents"
-              className="mt-10 rounded-2xl border border-[rgba(15,70,130,0.12)] bg-mist p-6 sm:p-7"
+              className="mt-10 rounded-2xl border border-[rgba(255,59,71,0.12)] bg-mist p-6 sm:p-7"
             >
               <h2 className="text-[15px] font-extrabold uppercase tracking-[0.18em] text-brand">
                 Table of contents
@@ -157,7 +157,7 @@ export default async function InsightPostPage({
 
           {/* Author box */}
           <Reveal>
-            <div className="mt-14 flex items-start gap-5 rounded-2xl border border-[rgba(15,70,130,0.12)] bg-mist p-6 sm:p-8">
+            <div className="mt-14 flex items-start gap-5 rounded-2xl border border-[rgba(255,59,71,0.12)] bg-mist p-6 sm:p-8">
               <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-brand to-electric text-xl font-extrabold text-white">
                 B3
               </span>

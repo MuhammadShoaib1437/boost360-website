@@ -46,7 +46,7 @@ export function Guarantees() {
           const Icon = Icons[g.icon];
           return (
             <Reveal key={g.title} delay={(i % 4) * 80} className="h-full">
-              <div className="h-full rounded-2xl border border-[rgba(15,70,130,0.12)] bg-white p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-electric/40 hover:shadow-[0_24px_55px_-24px_rgba(9,105,246,0.45)]">
+              <div className="h-full rounded-2xl border border-[rgba(255,59,71,0.12)] bg-white p-6 transition-all duration-300 hover:-translate-y-1.5 hover:border-electric/40 hover:shadow-[0_24px_55px_-24px_rgba(255,59,71,0.45)]">
                 <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-brand/10 to-ice/15 text-brand">
                   <Icon className="h-5 w-5" />
                 </span>
@@ -165,10 +165,10 @@ export function ComparisonTable() {
         />
       </Reveal>
       <Reveal delay={100}>
-        <div className="mx-auto mt-12 max-w-5xl overflow-x-auto rounded-2xl border border-[rgba(15,70,130,0.12)] bg-white shadow-sm">
+        <div className="mx-auto mt-12 max-w-5xl overflow-x-auto rounded-2xl border border-[rgba(255,59,71,0.12)] bg-white shadow-sm">
           <table className="w-full min-w-[640px] border-collapse text-left">
             <thead>
-              <tr className="border-b border-[rgba(15,70,130,0.12)]">
+              <tr className="border-b border-[rgba(255,59,71,0.12)]">
                 <th className="px-6 py-4 text-sm font-semibold text-muted">
                   <span className="sr-only">Factor</span>
                 </th>
@@ -189,7 +189,7 @@ export function ComparisonTable() {
                   key={r.label}
                   className={cn(
                     i !== COMPARISON_ROWS.length - 1 &&
-                      "border-b border-[rgba(15,70,130,0.08)]",
+                      "border-b border-[rgba(255,59,71,0.08)]",
                   )}
                 >
                   <td className="px-6 py-4 text-sm font-semibold text-ink">

@@ -65,7 +65,7 @@ export default function InsightsPage() {
                   <a
                     key={category}
                     href={`#cat-${slugify(category)}`}
-                    className={`${chipClass} border-electric/25 bg-electric/[0.06] text-brand transition-all duration-300 hover:-translate-y-0.5 hover:border-electric/50 hover:shadow-[0_12px_28px_-14px_rgba(9,105,246,0.6)]`}
+                    className={`${chipClass} border-electric/25 bg-electric/[0.06] text-brand transition-all duration-300 hover:-translate-y-0.5 hover:border-electric/50 hover:shadow-[0_12px_28px_-14px_rgba(255,59,71,0.6)]`}
                   >
                     {category}
                   </a>
@@ -74,7 +74,7 @@ export default function InsightsPage() {
               return (
                 <span
                   key={category}
-                  className={`${chipClass} cursor-default border-[rgba(15,70,130,0.1)] bg-mist text-muted/60`}
+                  className={`${chipClass} cursor-default border-[rgba(255,59,71,0.1)] bg-mist text-muted/60`}
                 >
                   {category}
                   <span className="rounded-full bg-white px-2 py-0.5 text-[11px] font-bold text-muted/70">
@@ -109,7 +109,7 @@ export default function InsightsPage() {
 
         {/* More to come */}
         <Reveal className="mt-16">
-          <div className="mx-auto max-w-2xl rounded-2xl border border-[rgba(15,70,130,0.12)] bg-mist p-8 text-center">
+          <div className="mx-auto max-w-2xl rounded-2xl border border-[rgba(255,59,71,0.12)] bg-mist p-8 text-center">
             <span className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-brand/10 to-ice/15 text-brand">
               <Icons.spark className="h-6 w-6" />
             </span>

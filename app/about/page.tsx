@@ -149,7 +149,7 @@ export default function AboutPage() {
               ].map((s) => (
                 <div
                   key={s.label}
-                  className="rounded-2xl border border-[rgba(15,70,130,0.12)] bg-mist p-6 text-center"
+                  className="rounded-2xl border border-[rgba(255,59,71,0.12)] bg-mist p-6 text-center"
                 >
                   <div className="text-gradient text-4xl font-extrabold sm:text-5xl">
                     {s.n}
@@ -186,7 +186,7 @@ export default function AboutPage() {
       <Section>
         <div className="mx-auto grid max-w-5xl items-center gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-14">
           <Reveal>
-            <div className="mx-auto flex aspect-square w-full max-w-[320px] items-center justify-center rounded-3xl bg-gradient-to-br from-brand via-electric to-ice shadow-[0_30px_70px_-30px_rgba(9,105,246,0.5)]">
+            <div className="mx-auto flex aspect-square w-full max-w-[320px] items-center justify-center rounded-3xl bg-gradient-to-br from-brand via-electric to-ice shadow-[0_30px_70px_-30px_rgba(255,59,71,0.5)]">
               <span className="text-7xl font-extrabold tracking-tight text-white sm:text-8xl">
                 MS
               </span>
@@ -245,7 +245,7 @@ export default function AboutPage() {
               <Link
                 href={`/services/${service.slug}`}
                 aria-label={`${service.title} — learn more`}
-                className="group flex h-full flex-col rounded-2xl border border-[rgba(15,70,130,0.12)] bg-white p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-electric/40 hover:shadow-[0_24px_55px_-24px_rgba(9,105,246,0.45)]"
+                className="group flex h-full flex-col rounded-2xl border border-[rgba(255,59,71,0.12)] bg-white p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-electric/40 hover:shadow-[0_24px_55px_-24px_rgba(255,59,71,0.45)]"
               >
                 <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-brand/10 to-ice/15 text-brand transition-transform duration-300 group-hover:scale-110">
                   {(function () {
@@ -325,7 +325,7 @@ export default function AboutPage() {
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {VALUE_PROPS.map((v, i) => (
             <Reveal key={v.title} delay={(i % 3) * 90} className="h-full">
-              <div className="h-full rounded-2xl border border-[rgba(15,70,130,0.12)] bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:border-electric/40 hover:shadow-[0_24px_55px_-24px_rgba(9,105,246,0.45)]">
+              <div className="h-full rounded-2xl border border-[rgba(255,59,71,0.12)] bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:border-electric/40 hover:shadow-[0_24px_55px_-24px_rgba(255,59,71,0.45)]">
                 <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-brand/10 to-ice/15 text-brand">
                   {(function () {
                     const Icon = Icons[v.icon];
@@ -357,7 +357,7 @@ export default function AboutPage() {
               <Link
                 key={m.slug}
                 href={`/marketplaces/${m.slug}`}
-                className="inline-flex items-center gap-2 rounded-full border border-[rgba(15,70,130,0.14)] bg-white px-5 py-2.5 text-[15px] font-semibold text-ink transition-all duration-300 hover:-translate-y-0.5 hover:border-electric/50 hover:text-brand hover:shadow-[0_12px_30px_-12px_rgba(9,105,246,0.5)]"
+                className="inline-flex items-center gap-2 rounded-full border border-[rgba(255,59,71,0.14)] bg-white px-5 py-2.5 text-[15px] font-semibold text-ink transition-all duration-300 hover:-translate-y-0.5 hover:border-electric/50 hover:text-brand hover:shadow-[0_12px_30px_-12px_rgba(255,59,71,0.5)]"
               >
                 {m.name}
                 <Icons.arrowRight className="h-4 w-4" />

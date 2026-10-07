@@ -139,24 +139,24 @@ export function QuoteForm() {
     cn(
       "flex items-center gap-2 rounded-xl border px-4 py-3 text-[14.5px] font-medium transition-all duration-200",
       active
-        ? "border-electric bg-electric/10 text-brand shadow-[0_0_0_3px_rgba(0,200,248,0.15)]"
-        : "border-[rgba(15,70,130,0.16)] bg-white text-ink hover:border-electric/50",
+        ? "border-electric bg-electric/10 text-brand shadow-[0_0_0_3px_rgba(255,138,30,0.15)]"
+        : "border-[rgba(255,59,71,0.16)] bg-white text-ink hover:border-electric/50",
     );
 
   const inputCls =
-    "w-full rounded-xl border border-[rgba(15,70,130,0.18)] bg-white px-4 py-3 text-[15px] text-ink placeholder:text-slate-400 transition-all focus:border-electric focus:ring-2 focus:ring-ice/30 focus:outline-none";
+    "w-full rounded-xl border border-[rgba(255,59,71,0.18)] bg-white px-4 py-3 text-[15px] text-ink placeholder:text-slate-400 transition-all focus:border-electric focus:ring-2 focus:ring-ice/30 focus:outline-none";
 
   return (
-    <div className="overflow-hidden rounded-3xl border border-[rgba(15,70,130,0.14)] bg-white shadow-[0_30px_80px_-30px_rgba(9,105,246,0.35)]">
+    <div className="overflow-hidden rounded-3xl border border-[rgba(255,59,71,0.14)] bg-white shadow-[0_30px_80px_-30px_rgba(255,59,71,0.35)]">
       {/* progress */}
-      <div className="border-b border-[rgba(15,70,130,0.1)] bg-mist/60 px-6 py-5 sm:px-8">
+      <div className="border-b border-[rgba(255,59,71,0.1)] bg-mist/60 px-6 py-5 sm:px-8">
         <div className="flex items-center justify-between text-sm font-semibold">
           <span className="text-ink">
             Step {step + 1} of 4
           </span>
           <span className="text-muted">{Math.round(((step + 1) / 4) * 100)}%</span>
         </div>
-        <div className="mt-3 h-2 overflow-hidden rounded-full bg-[rgba(15,70,130,0.1)]">
+        <div className="mt-3 h-2 overflow-hidden rounded-full bg-[rgba(255,59,71,0.1)]">
           <div
             className="h-full rounded-full bg-gradient-to-r from-electric via-ice to-growth transition-all duration-500"
             style={{ width: `${((step + 1) / 4) * 100}%` }}
@@ -350,7 +350,7 @@ export function QuoteForm() {
           <button
             type="button"
             onClick={finish}
-            className="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-brand via-electric to-ice px-7 py-3.5 font-semibold text-white shadow-[0_8px_30px_-6px_rgba(0,140,255,0.55)] transition-all hover:-translate-y-0.5"
+            className="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-brand via-electric to-ice px-7 py-3.5 font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,90,46,0.55)] transition-all hover:-translate-y-0.5"
           >
             {step === 3 ? (
               <>

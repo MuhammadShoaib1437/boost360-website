@@ -32,7 +32,7 @@ const SERVICE_OPTIONS = [
 ];
 
 const inputCls =
-  "w-full rounded-xl border border-[rgba(15,70,130,0.18)] bg-white px-4 py-3 text-[15px] text-ink placeholder:text-slate-400 transition-all focus:border-electric focus:ring-2 focus:ring-ice/30 focus:outline-none";
+  "w-full rounded-xl border border-[rgba(255,59,71,0.18)] bg-white px-4 py-3 text-[15px] text-ink placeholder:text-slate-400 transition-all focus:border-electric focus:ring-2 focus:ring-ice/30 focus:outline-none";
 const labelCls = "mb-1.5 block text-sm font-semibold text-ink";
 const errCls = "mt-1.5 text-[13px] font-medium text-red-600";
 
@@ -281,7 +281,7 @@ export function ContactForm() {
       <div className="flex flex-col gap-3 pt-1 sm:flex-row">
         <button
           type="submit"
-          className="inline-flex flex-1 items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-brand via-electric to-ice px-6 py-3.5 font-semibold text-white shadow-[0_8px_30px_-6px_rgba(0,140,255,0.55)] transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_40px_-6px_rgba(0,140,255,0.7)]"
+          className="inline-flex flex-1 items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-brand via-electric to-ice px-6 py-3.5 font-semibold text-white shadow-[0_8px_30px_-6px_rgba(255,90,46,0.55)] transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_40px_-6px_rgba(255,90,46,0.7)]"
         >
           <Icons.whatsapp className="h-5 w-5" />
           Send My Inquiry
@@ -289,7 +289,7 @@ export function ContactForm() {
         <button
           type="button"
           onClick={emailInstead}
-          className="inline-flex items-center justify-center gap-2 rounded-xl border border-[rgba(15,70,130,0.18)] bg-white px-6 py-3.5 font-semibold text-ink transition-all hover:-translate-y-0.5 hover:border-electric/50"
+          className="inline-flex items-center justify-center gap-2 rounded-xl border border-[rgba(255,59,71,0.18)] bg-white px-6 py-3.5 font-semibold text-ink transition-all hover:-translate-y-0.5 hover:border-electric/50"
         >
           <Icons.mail className="h-5 w-5 text-brand" />
           Email Instead

@@ -110,7 +110,7 @@ export function HeroDashboard() {
           <div className="flex items-center gap-2">
             <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f57]" />
             <span className="h-2.5 w-2.5 rounded-full bg-[#febc2e]" />
-            <span className="h-2.5 w-2.5 rounded-full bg-[#22c15e]" />
+            <span className="h-2.5 w-2.5 rounded-full bg-[#ff3b47]" />
           </div>
           <p className="rounded-full bg-ice/10 px-3 py-1 text-[11px] font-semibold text-ice">
             Sample dashboard
@@ -139,13 +139,13 @@ export function HeroDashboard() {
           <svg viewBox="0 0 560 180" className="mt-2 h-36 w-full sm:h-44" role="img" aria-label="Sample revenue trend chart">
             <defs>
               <linearGradient id="revFill" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#00c8f8" stopOpacity="0.35" />
-                <stop offset="100%" stopColor="#00c8f8" stopOpacity="0" />
+                <stop offset="0%" stopColor="#ff8a1e" stopOpacity="0.35" />
+                <stop offset="100%" stopColor="#ff8a1e" stopOpacity="0" />
               </linearGradient>
               <linearGradient id="revLine" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0%" stopColor="#008cff" />
-                <stop offset="60%" stopColor="#00c8f8" />
-                <stop offset="100%" stopColor="#22c15e" />
+                <stop offset="0%" stopColor="#ff5a2e" />
+                <stop offset="60%" stopColor="#ff8a1e" />
+                <stop offset="100%" stopColor="#ff3b47" />
               </linearGradient>
             </defs>
             {[30, 70, 110, 150].map((y) => (
@@ -165,7 +165,7 @@ export function HeroDashboard() {
               strokeDasharray="640"
               className="draw-line"
             />
-            <circle cx="560" cy="34" r="5" fill="#22c15e">
+            <circle cx="560" cy="34" r="5" fill="#ff3b47">
               <animate attributeName="r" values="5;7;5" dur="2.4s" repeatCount="indefinite" />
             </circle>
           </svg>
