@@ -22,6 +22,14 @@ export const STEP_GRADIENTS = [
   "from-amber-400 to-orange-500",
 ];
 
+/** Arrow-circle accents for dark cards. */
+export const DARK_ARROW_ACCENTS = [
+  "from-brand/30 to-electric/25 text-ice",
+  "from-ice/30 to-ice/15 text-ice",
+  "from-growth/30 to-growth/20 text-growth",
+  "from-amber-400/30 to-orange-500/25 text-amber-300",
+];
+
 function CardShell({
   children,
   href,
@@ -135,11 +143,13 @@ export function MarketplaceCard({
   points,
   dark = false,
   delay = 0,
+  accent = 0,
 }: {
   marketplace: Marketplace;
   points: string[];
   dark?: boolean;
   delay?: number;
+  accent?: number;
 }) {
   return (
     <Reveal delay={delay} className="h-full">
@@ -157,12 +167,12 @@ export function MarketplaceCard({
           >
             {marketplace.name}
           </h3>
-          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-ice/10 text-ice transition-transform duration-300 group-hover:translate-x-1">
+          <span className={cn("flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br transition-transform duration-300 group-hover:translate-x-1 group-hover:scale-110", dark ? DARK_ARROW_ACCENTS[accent % DARK_ARROW_ACCENTS.length] : CARD_ACCENTS[accent % CARD_ACCENTS.length])}>
             <Icons.arrowRight className="h-4 w-4" />
           </span>
         </div>
         <ul className="mt-4 flex-1 space-y-2">
-          {points.map((p) => (
+          {points.map((p, pi) => (
             <li
               key={p}
               className={cn(
@@ -170,7 +180,7 @@ export function MarketplaceCard({
                 dark ? "text-slate-300" : "text-muted",
               )}
             >
-              <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-gradient-to-r from-electric to-growth" />
+              <span className={cn("h-1.5 w-1.5 shrink-0 rounded-full bg-gradient-to-r", STEP_GRADIENTS[(accent + pi) % STEP_GRADIENTS.length])} />
               {p}
             </li>
           ))}
@@ -183,20 +193,26 @@ export function MarketplaceCard({
 export function CaseStudyCard({
   study,
   delay = 0,
+  accent = 0,
 }: {
   study: CaseStudy;
   delay?: number;
+  accent?: number;
 }) {
   return (
     <Reveal delay={delay} className="h-full">
       <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-[rgba(15,70,130,0.12)] bg-white transition-all duration-300 hover:-translate-y-1.5 hover:border-electric/40 hover:shadow-[0_24px_55px_-24px_rgba(9,105,246,0.45)]">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-x-0 top-0 z-10 h-1 origin-left scale-x-0 bg-gradient-to-r from-brand via-electric to-ice transition-transform duration-500 group-hover:scale-x-100"
+        />
         <div className="relative bg-gradient-to-br from-navy via-midnight to-[#0b2a5e] p-6">
           <div
             aria-hidden="true"
             className="absolute inset-0 bg-grid-dark opacity-60"
           />
           <div className="relative">
-            <span className="inline-block rounded-full bg-ice/15 px-3 py-1 text-[11.5px] font-bold uppercase tracking-[0.12em] text-ice">
+            <span className={cn("inline-block rounded-full bg-gradient-to-br px-3 py-1 text-[11.5px] font-bold uppercase tracking-[0.12em]", CARD_ACCENTS[(accent ?? 0) % CARD_ACCENTS.length])}>
               {study.category}
             </span>
             <span className="ml-2 inline-block rounded-full bg-white/10 px-3 py-1 text-[11.5px] font-semibold text-slate-300">
@@ -232,6 +248,10 @@ export function BlogCard({ post, delay = 0 }: { post: InsightPost; delay?: numbe
   return (
     <Reveal delay={delay} className="h-full">
       <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-[rgba(15,70,130,0.12)] bg-white transition-all duration-300 hover:-translate-y-1.5 hover:border-electric/40 hover:shadow-[0_24px_55px_-24px_rgba(9,105,246,0.45)]">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-x-0 top-0 z-10 h-1 origin-left scale-x-0 bg-gradient-to-r from-brand via-electric to-ice transition-transform duration-500 group-hover:scale-x-100"
+        />
         <div className="relative flex h-40 items-center justify-center overflow-hidden bg-gradient-to-br from-navy via-[#0b2a5e] to-electric">
           <div aria-hidden="true" className="absolute inset-0 bg-grid-dark opacity-70" />
           <div

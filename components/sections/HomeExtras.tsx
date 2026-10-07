@@ -68,6 +68,10 @@ export function Guarantees() {
 export function FreeAuditCTA() {
   return (
     <section className="relative overflow-hidden bg-abyss py-16 sm:py-20">
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 top-0 h-px animate-pulse-soft bg-gradient-to-r from-transparent via-ice/70 to-transparent"
+      />
       <div aria-hidden="true" className="pointer-events-none absolute inset-0">
         <div className="absolute left-1/4 top-0 h-[300px] w-[500px] -translate-x-1/2 rounded-full bg-electric/15 blur-[120px]" />
         <div className="absolute -right-32 bottom-0 h-[280px] w-[280px] rounded-full bg-ice/10 blur-[120px]" />

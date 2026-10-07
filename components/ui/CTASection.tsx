@@ -16,6 +16,10 @@ export function CTASection({
     <section className="relative overflow-hidden bg-abyss py-20 sm:py-24 lg:py-28">
       <div
         aria-hidden="true"
+        className="absolute inset-x-0 top-0 h-px animate-pulse-soft bg-gradient-to-r from-transparent via-ice/70 to-transparent"
+      />
+      <div
+        aria-hidden="true"
         className="pointer-events-none absolute inset-0"
       >
         <div className="absolute left-1/2 top-1/2 h-[520px] w-[820px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-electric/20 blur-[140px]" />

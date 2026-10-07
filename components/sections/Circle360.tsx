@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { Icons } from "../ui/icons";
+import { STEP_GRADIENTS } from "../ui/Cards";
 
 const NODES: { label: string; href: string }[] = [
   { label: "Research", href: "/services/product-research" },
@@ -12,6 +13,14 @@ const NODES: { label: string; href: string }[] = [
   { label: "Operations", href: "/services/account-health" },
   { label: "Optimization", href: "/services/marketplace-management" },
   { label: "Growth", href: "/services/multi-channel-management" },
+];
+
+/** Rotating node accents for the orbit. */
+const NODE_ACCENTS = [
+  "border-brand/50 shadow-[0_0_28px_-6px_rgba(9,105,246,0.6)] hover:border-brand hover:text-ice",
+  "border-ice/50 shadow-[0_0_28px_-6px_rgba(0,200,248,0.6)] hover:border-ice hover:text-ice",
+  "border-growth/50 shadow-[0_0_28px_-6px_rgba(34,193,94,0.6)] hover:border-growth hover:text-growth",
+  "border-amber-400/50 shadow-[0_0_28px_-6px_rgba(251,191,36,0.6)] hover:border-amber-300 hover:text-amber-200",
 ];
 
 /**
@@ -52,7 +61,7 @@ export function Circle360() {
               >
                 <Link
                   href={node.href}
-                  className="block animate-spin-slower-reverse whitespace-nowrap rounded-full border border-ice/30 bg-midnight/90 px-5 py-2.5 text-sm font-semibold text-white shadow-[0_0_28px_-6px_rgba(0,200,248,0.55)] backdrop-blur-md transition-colors hover:border-ice/70 hover:text-ice"
+                  className={`block animate-spin-slower-reverse whitespace-nowrap rounded-full border bg-midnight/90 px-5 py-2.5 text-sm font-semibold text-white backdrop-blur-md transition-all duration-300 hover:scale-110 ${NODE_ACCENTS[i % NODE_ACCENTS.length]}`}
                 >
                   {node.label}
                 </Link>
@@ -62,7 +71,17 @@ export function Circle360() {
         </div>
 
         {/* center */}
-        <div className="absolute left-1/2 top-1/2 flex h-44 w-44 -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-full border border-ice/30 bg-navy shadow-[0_0_80px_-10px_rgba(0,200,248,0.6)] lg:h-52 lg:w-52">
+        <div
+          aria-hidden="true"
+          className="absolute left-1/2 top-1/2 h-56 w-56 -translate-x-1/2 -translate-y-1/2 animate-pulse-soft rounded-full bg-ice/10 blur-2xl lg:h-64 lg:w-64"
+        />
+        <div
+          aria-hidden="true"
+          className="absolute left-1/2 top-1/2 h-52 w-52 -translate-x-1/2 -translate-y-1/2 lg:h-60 lg:w-60"
+        >
+          <div className="h-full w-full animate-spin-slower rounded-full bg-[conic-gradient(from_0deg,transparent_0deg,rgba(0,200,248,0.45)_70deg,transparent_140deg)] blur-md" />
+        </div>
+        <div className="absolute left-1/2 top-1/2 flex h-44 w-44 -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-full border border-ice/30 bg-navy shadow-[0_0_80px_-10px_rgba(0,200,248,0.6)] transition-transform duration-500 hover:scale-105 lg:h-52 lg:w-52">
           <span className="text-gradient text-5xl font-extrabold tracking-tight lg:text-6xl">
             360°
           </span>
@@ -85,9 +104,9 @@ export function Circle360() {
             <li key={node.label}>
               <Link
                 href={node.href}
-                className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition-colors hover:border-ice/40"
+                className="group flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-ice/40 hover:bg-white/[0.07]"
               >
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-ice/10 text-[13px] font-bold text-ice">
+                <span className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br text-[13px] font-bold text-white transition-transform duration-300 group-hover:scale-110 ${STEP_GRADIENTS[i % STEP_GRADIENTS.length]}`}>
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <span className="text-[15px] font-semibold text-white">

@@ -313,6 +313,7 @@ export default function Home() {
                 points={MARKETPLACE_POINTS[m.slug] ?? []}
                 dark
                 delay={(i % 3) * 80}
+                accent={i}
               />
             ))}
           </div>
@@ -349,7 +350,7 @@ export default function Home() {
         </Reveal>
         <div className="mt-12 grid gap-5 md:grid-cols-3">
           {CASE_STUDIES.slice(0, 3).map((c, i) => (
-            <CaseStudyCard key={c.slug} study={c} delay={i * 80} />
+            <CaseStudyCard key={c.slug} study={c} delay={i * 80} accent={i} />
           ))}
         </div>
         <Reveal>
