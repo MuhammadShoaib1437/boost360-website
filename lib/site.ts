@@ -11,7 +11,7 @@ export const WHATSAPP_DISPLAY = "+92 342 2625439";
 export const WHATSAPP_INTL = "923422625439";
 export const EMAIL = "helloshoaib01@gmail.com";
 /** Public Telegram username for client contact (t.me link). */
-export const TELEGRAM_USERNAME = "Pxycho_1437";
+export const TELEGRAM_USERNAME = "Boost360Pro";
 
 /** Build a t.me deep link for the contact channel. */
 export function telegramLink(): string {
