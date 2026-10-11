@@ -7,8 +7,10 @@ import { ContactForm } from "@/components/forms/ContactForm";
 import {
   WHATSAPP_DISPLAY,
   EMAIL,
+  TELEGRAM_USERNAME,
   WA_DEFAULT_MESSAGE,
   waLink,
+  telegramLink,
   mailtoLink,
   bookCallLink,
 } from "@/lib/site";
@@ -16,7 +18,7 @@ import {
 export const metadata = {
   title: "Contact Boost360Pro — Let's Talk About Your Store",
   description:
-    "Reach Boost360Pro on WhatsApp or email. Tell us about your store — every inquiry is read by a real person.",
+    "Reach Boost360Pro on WhatsApp, Telegram, or email. Tell us about your store — every inquiry is read by a real person.",
   alternates: { canonical: "/contact" },
 };
 
@@ -53,7 +55,7 @@ export default function ContactPage() {
       {/* Contact cards */}
       <section className="bg-white pt-14 sm:pt-20">
         <Container>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             <Reveal>
               <div className="flex h-full flex-col rounded-3xl border border-[rgba(15,70,130,0.12)] bg-white p-8 shadow-[0_20px_60px_-30px_rgba(9,105,246,0.3)] transition-all duration-300 hover:-translate-y-1 hover:border-electric/40">
                 <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#22c15e]/10 text-[#22c15e]">
@@ -80,6 +82,36 @@ export default function ContactPage() {
                   >
                     <Icons.whatsapp className="h-5 w-5" />
                     Chat on WhatsApp
+                  </Button>
+                </div>
+              </div>
+            </Reveal>
+            <Reveal delay={60}>
+              <div className="flex h-full flex-col rounded-3xl border border-[rgba(15,70,130,0.12)] bg-white p-8 shadow-[0_20px_60px_-30px_rgba(9,105,246,0.3)] transition-all duration-300 hover:-translate-y-1 hover:border-electric/40">
+                <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#229ED9]/10 text-[#229ED9]">
+                  <Icons.telegram className="h-7 w-7" />
+                </span>
+                <h2 className="mt-5 text-2xl font-extrabold tracking-tight text-ink">
+                  Telegram
+                </h2>
+                <p className="mt-2 break-all text-lg font-semibold text-brand">
+                  @{TELEGRAM_USERNAME}
+                </p>
+                <p className="mt-3 flex-1 text-[15px] leading-relaxed text-muted">
+                  Prefer Telegram? Message us there — same fast replies, on the
+                  app you like best.
+                </p>
+                <div className="mt-7">
+                  <Button
+                    variant="secondary"
+                    size="lg"
+                    href={telegramLink()}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full sm:w-auto"
+                  >
+                    <Icons.telegram className="h-5 w-5" />
+                    Chat on Telegram
                   </Button>
                 </div>
               </div>

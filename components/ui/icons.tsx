@@ -156,6 +156,11 @@ export const Icons = {
         <path d="m22 7-10 6L2 7" />
       </>,
     ),
+  telegram: (p: SVGProps<SVGSVGElement>) => (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...p}>
+      <path d="M2 21l21-9L2 3v7l15 2-15 2v7Z" />
+    </svg>
+  ),
   cart: (p: SVGProps<SVGSVGElement>) =>
     base(
       p,

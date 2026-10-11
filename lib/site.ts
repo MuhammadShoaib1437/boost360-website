@@ -10,6 +10,13 @@ export const WHATSAPP_DISPLAY = "+92 342 2625439";
 /** International format used inside wa.me URLs (no +, no spaces, no hyphens). */
 export const WHATSAPP_INTL = "923422625439";
 export const EMAIL = "helloshoaib01@gmail.com";
+/** Public Telegram username for client contact (t.me link). */
+export const TELEGRAM_USERNAME = "Pxycho_1437";
+
+/** Build a t.me deep link for the contact channel. */
+export function telegramLink(): string {
+  return `https://t.me/${TELEGRAM_USERNAME}`;
+}
 
 export const WA_DEFAULT_MESSAGE =
   "Hi Boost360Pro, I'm interested in your e-commerce services and would like to discuss my store.";
